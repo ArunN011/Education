@@ -1,0 +1,606 @@
+body{
+    cursor:none;
+}
+
+.cursor-dot{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+    background:#3B82F6;
+
+    transform:translate(-50%,-50%);
+
+    pointer-events:none;
+
+    z-index:9999999;
+
+    box-shadow:
+        0 0 10px #3B82F6,
+        0 0 20px #38BDF8,
+        0 0 40px #38BDF8;
+
+    will-change:left,top;
+
+}
+
+.cursor-outline{
+
+    position:fixed;
+    width:40px;
+    height:40px;
+    border:2px solid rgba(59,130,246,.4);
+    border-radius:50%;
+    pointer-events:none;
+    z-index:9999998;
+    transform:translate(-50%,-50%);
+    transition:
+    width .25s,
+    height .25s,
+    border-color .25s,
+    background .25s;
+    backdrop-filter:blur(3px);
+}
+
+
+.login-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+    background:
+    linear-gradient(
+        rgba(5,15,35,.70),
+        rgba(5,15,35,.70)
+    ),
+    url("aboutbg.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+    overflow:hidden;
+
+}
+
+
+.login-wrapper{
+
+    width:100%;
+
+    max-width:720px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.login-top{
+
+    width:100%;
+
+    margin-bottom:25px;
+
+}
+
+.back-home-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    background:rgba(25,25,25,.85);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    transition:.35s;
+
+}
+
+.back-home-btn:hover{
+
+    background:#0A74D8;
+
+    color:#fff;
+
+    transform:translateX(-5px);
+
+    box-shadow:
+
+    0 18px 35px rgba(10,116,216,.35);
+
+}
+
+
+.login-card{
+
+    width:100%;
+
+    background:rgba(23,23,23,.92);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    padding:45px;
+
+    transition:.35s;
+
+}
+
+.login-card:hover{
+
+    border-color:#0A74D8;
+
+    box-shadow:
+
+    0 25px 50px rgba(10,116,216,.25);
+
+}
+
+
+.login-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.05);
+
+    color:#58A6FF;
+
+    margin-bottom:25px;
+
+}
+
+.login-badge i{
+
+    font-size:18px;
+
+}
+
+
+.login-card h2{
+
+    color:#fff;
+
+    font-size:50px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+.login-card h2 span{
+
+    color:#0A74D8;
+
+}
+
+.login-card p{
+
+    color:#bdbdbd;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+
+
+.login-card label{
+
+    display:block;
+
+    color:#fff;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.custom-input{
+
+    height:58px;
+
+    background:#101010 !important;
+
+    color:#fff !important;
+
+    border:1px solid rgba(255,255,255,.08) !important;
+
+    border-radius:16px !important;
+
+    transition:.35s;
+
+}
+
+.custom-input::placeholder{
+
+    color:#888;
+
+}
+
+.custom-input:focus{
+
+    border-color:#0A74D8 !important;
+
+    box-shadow:
+
+    0 0 20px rgba(10,116,216,.25);
+
+}
+
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box input{
+
+    padding-right:55px !important;
+
+}
+
+.togglePassword{
+
+    position:absolute;
+
+    top:50%;
+
+    right:18px;
+
+    transform:translateY(-50%);
+
+    color:#58A6FF;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+}
+
+.error-text{
+
+    color:#ff4d4d;
+
+    display:block;
+
+    min-height:18px;
+
+    margin-top:6px;
+
+    font-size:13px;
+
+}
+
+.input-error{
+
+    border-color:#ff4d4d !important;
+
+}
+
+.input-success{
+
+    border-color:#2ecc71 !important;
+
+}
+
+
+.remember-forgot{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:25px 0;
+
+}
+
+.remember-forgot label{
+
+    color:#d5d5d5;
+
+    margin-bottom:0;
+
+}
+
+.remember-forgot a{
+
+    color:#58A6FF;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.remember-forgot a:hover{
+
+    color:#fff;
+
+}
+
+
+.login-btn{
+
+    width:100%;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#0A74D8;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.login-btn:hover{
+
+    background:#1187ef;
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 20px 35px rgba(10,116,216,.35);
+
+}
+
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    margin:35px 0;
+
+    color:#999;
+
+}
+
+.divider::before,
+
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#333;
+
+}
+
+.divider span{
+
+    padding:0 18px;
+
+}
+
+
+.social-login{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.social-btn{
+
+    width:56px;
+
+    height:56px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    background:#101010;
+
+    color:#fff;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.social-btn:hover{
+
+    background:#0A74D8;
+
+    transform:translateY(-6px);
+
+}
+
+.social-btn i{
+
+    font-size:22px;
+
+}
+
+
+.register-link{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    color:#bbb;
+
+}
+
+.register-link a{
+
+    color:#58A6FF;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+.register-link a:hover{
+
+    color:#fff;
+
+}
+
+
+@media(max-width:768px){
+
+.login-section{
+
+padding:30px 15px;
+
+background-attachment:scroll;
+
+}
+
+.login-card{
+
+padding:28px;
+
+border-radius:24px;
+
+}
+
+.login-card h2{
+
+font-size:36px;
+
+}
+
+.login-top{
+
+text-align:center;
+
+}
+
+.back-home-btn{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+.remember-forgot{
+
+flex-direction:column;
+
+gap:15px;
+
+align-items:flex-start;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.login-card{
+
+padding:22px;
+
+}
+
+.login-card h2{
+
+font-size:30px;
+
+}
+
+.login-btn{
+
+height:54px;
+
+font-size:16px;
+
+}
+
+.social-login{
+
+gap:12px;
+
+}
+
+.social-btn{
+
+width:48px;
+
+height:48px;
+
+}
+
+}

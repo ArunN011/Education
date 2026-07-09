@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="loader.css">
+<link rel="stylesheet" href="about.css">
+
+
+    <title>Education</title>
+</head>
+<body>
+    <!--cursor !-->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+  
+<div id="preloader">
+    <div class="loader-bg"></div>
+
+    <span class="particle p1"></span>
+    <span class="particle p2"></span>
+    <span class="particle p3"></span>
+    <span class="particle p4"></span>
+    <span class="particle p5"></span>
+
+    <div class="loader-content">
+        <img
+            src="stacklylogoimg.png"
+            class="loader-logo"
+            alt="Stackly Logo">
+        <img
+            src="stacklyletter.png"
+            class="loader-text"
+            alt="Stackly">
+
+        <h4 class="loader-title">
+            Empowering Education Through Technology
+        </h4>
+        <p id="loading-message">
+
+            Preparing Your Learning Experience...
+
+        </p>
+        <div class="progress-box">
+
+            <div class="progress-fill"></div>
+
+        </div>
+
+        <h5 id="loading-percent">
+
+            0%
+
+        </h5>
+
+    </div>
+
+</div>
+<div id="website">
+
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+
+    <div class="container">
+        <button class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu">
+
+            <i class="ri-menu-3-line"></i>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-center">
+
+           <ul class="navbar-nav align-items-center">
+
+         <li class="nav-item logo-item">
+
+                    <a href="index.html">
+
+                        <img src="orglogo.webp"
+                            class="logo"
+                            alt="Stackly">
+
+                    </a>
+
+    </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Service</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="d-none d-lg-block">
+
+            <a href="signup.html" class="signup-btn">
+
+                Sign up
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="offcanvas offcanvas-end custom-offcanvas"
+    tabindex="-1"
+    id="mobileMenu">
+
+    <div class="offcanvas-header">
+            <a href="index.html">
+        <img src="orglogo.webp"
+            class="mobile-logo"
+            alt="Stackly">
+            </a>
+
+        <button type="button"
+            class="btn-close btn-close-white shadow-none"
+            data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <ul class="navbar-nav text-center">
+
+            <li class="nav-item">
+
+                <a class="nav-link active" href="index.html">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="about.html">
+
+                    About us
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="service.html">
+
+                    Service
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="blog.html">
+
+                    Blog
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="contact.html">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="text-center mt-4">
+
+            <a href="signup.html" class="signup-btn mobile-btn">
+
+                Sign up
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<section class="about-hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-5">
+
+    
+
+            <div class="col-lg-6">
+
+                <div class="about-hero-content">
+
+                    <span class="about-badge"
+                        data-aos="fade-right">
+
+                        <i class="ri-building-2-fill"></i>
+
+                        About Stackly Education
+
+                    </span>
+
+                    <h1
+                        data-aos="fade-right"
+                        data-aos-delay="200">
+
+                        Building
+
+                        <span>Future Leaders</span>
+
+                        Through Modern
+
+                        Learning.
+
+                    </h1>
+
+                    <p
+                        data-aos="fade-right"
+                        data-aos-delay="400">
+
+                        At Stackly Education, we believe that learning
+                        should inspire innovation, build confidence,
+                        and prepare students for real-world careers.
+                        Our industry-focused programs, expert mentors,
+                        and practical projects empower every learner
+                        to achieve lasting success.
+
+                    </p>
+
+                    <div class="about-buttons"
+                        data-aos="fade-up"
+                        data-aos-delay="600">
+
+                        <a href="#"
+
+                            class="about-btn"
+
+                            id="aboutExploreBtn">
+
+                            Explore Courses
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                        <a href="#"
+
+                            class="about-outline-btn"
+
+                            id="aboutStoryBtn">
+
+                            Our Journey
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="about-info-boxes"
+
+                        data-aos="fade-up"
+
+                        data-aos-delay="800">
+
+                        <div class="info-box">
+
+                            <i class="ri-graduation-cap-fill"></i>
+
+                            <div>
+
+                                <h4>
+
+                                    1200+
+
+                                </h4>
+
+                                <span>
+
+                                    Courses
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="info-box">
+
+                            <i class="ri-user-star-fill"></i>
+
+                            <div>
+
+                                <h4>
+
+                                    50K+
+
+                                </h4>
+
+                                <span>
+
+                                    Students
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="about-hero-image"
+
+                    data-aos="zoom-in"
+
+                    data-aos-delay="300">
+
+                    <img
+
+                        src="eduabout.webp"
+
+                        class="img-fluid"
+
+                        alt="About Stackly">
+
+               
+
+                    <div class="floating-card card-one">
+
+                        <i class="ri-award-fill"></i>
+
+                        <div>
+
+                            <h5>
+
+                                Industry Ready
+
+                            </h5>
+
+                            <span>
+
+                                Career Focused Learning
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Floating Card -->
+
+                    <div class="floating-card card-two">
+
+                        <i class="ri-book-open-fill"></i>
+
+                        <div>
+
+                            <h5>
+
+                                Expert Mentors
+
+                            </h5>
+
+                            <span>
+
+                                Learn From Professionals
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="journey-section">
+
+    <div class="container">
+
+   
+
+        <div class="journey-heading text-center">
+
+            <span class="journey-badge"
+                data-aos="fade-up">
+
+                <i class="ri-route-fill"></i>
+
+                Your Learning Journey
+
+            </span>
+
+            <h2
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                From Student To
+
+                <span>Industry Professional</span>
+
+            </h2>
+
+            <p
+                data-aos="fade-up"
+                data-aos-delay="400">
+
+                Every successful career begins with the right learning path.
+                At Stackly Education, we guide you step-by-step through
+                practical learning, real-world experience, and career success.
+
+            </p>
+
+        </div>
+
+        
+
+        <div class="row g-4 mt-4">
+
+
+            <div class="col-lg-3 col-md-6"
+                data-aos="fade-up">
+
+                <div class="journey-card">
+
+                    <div class="journey-number">
+
+                        01
+
+                    </div>
+
+                    <div class="journey-icon">
+
+                        <i class="ri-graduation-cap-fill"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Learn From Experts
+
+                    </h4>
+
+                    <p>
+
+                        Master industry-relevant concepts through
+                        experienced mentors and structured learning.
+
+                    </p>
+
+                   <a href="#" class="journey-link journeyBtn">
+
+    Learn More
+
+    <i class="ri-arrow-right-line"></i>
+
+</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="150">
+
+                <div class="journey-card">
+
+                    <div class="journey-number">
+
+                        02
+
+                    </div>
+
+                    <div class="journey-icon">
+
+                        <i class="ri-code-box-fill"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Build Real Projects
+
+                    </h4>
+
+                    <p>
+
+                        Work on practical assignments and portfolio
+                        projects inspired by real industry scenarios.
+
+                    </p>
+
+                    <a href="#" class="journey-link journeyBtn">
+
+    Learn More
+
+    <i class="ri-arrow-right-line"></i>
+
+</a>
+
+                </div>
+
+            </div>
+
+          
+
+            <div class="col-lg-3 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="300">
+
+                <div class="journey-card">
+
+                    <div class="journey-number">
+
+                        03
+
+                    </div>
+
+                    <div class="journey-icon">
+
+                        <i class="ri-lightbulb-flash-fill"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Develop Confidence
+
+                    </h4>
+
+                    <p>
+
+                        Strengthen communication, teamwork,
+                        leadership, and interview skills through
+                        continuous practice.
+
+                    </p>
+
+                       <a href="#" class="journey-link journeyBtn">
+
+    Learn More
+
+    <i class="ri-arrow-right-line"></i>
+
+</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="450">
+
+                <div class="journey-card">
+
+                    <div class="journey-number">
+
+                        04
+
+                    </div>
+
+                    <div class="journey-icon">
+
+                        <i class="ri-briefcase-4-fill"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Launch Your Career
+
+                    </h4>
+
+                    <p>
+
+                        Earn certifications, prepare for placements,
+                        and confidently begin your professional journey.
+
+                    </p>
+
+                    <a href="#" class="journey-link journeyBtn">
+
+                    Learn More
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="about-cta-section">
+
+    <div class="container">
+
+        <div class="about-cta-wrapper"
+             data-aos="zoom-in">
+
+            <div class="about-overlay"></div>
+
+            <div class="about-cta-content">
+
+                <span class="about-cta-badge">
+
+                    <i class="ri-graduation-cap-fill"></i>
+
+                    STACKLY EDUCATION
+
+                </span>
+
+                <h2>
+
+                    Transform Your Passion Into
+                    <span>A Successful Career</span>
+
+                </h2>
+
+                <p>
+
+                    Learn from experienced mentors, build real-world projects,
+                    earn industry-recognized certifications, and take the
+                    first step toward achieving your dream career.
+
+                </p>
+
+                <a href="#"
+
+                   class="about-cta-btn"
+
+                   id="aboutCtaBtn">
+
+                    Explore Courses
+
+                    <i class="ri-arrow-right-line"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="choose-section">
+
+    <div class="container">
+        <div class="choose-heading text-center">
+
+            <span class="choose-badge"
+                data-aos="fade-up">
+
+                <i class="ri-star-smile-fill"></i>
+
+                Why Choose Stackly
+
+            </span>
+
+            <h2
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                Learn Smarter,
+                <span>Grow Faster</span>
+
+            </h2>
+
+            <p
+                data-aos="fade-up"
+                data-aos-delay="400">
+
+                Stackly Education combines industry experts,
+                practical projects, career guidance and an
+                engaging learning experience to help students
+                achieve their professional goals with confidence.
+
+            </p>
+
+        </div>
+        <div class="row g-4 align-items-center mt-5">
+            <div class="col-lg-4">
+
+                <div class="choose-card"
+
+                    data-aos="fade-right">
+
+                    <div class="choose-icon">
+
+                        <i class="ri-graduation-cap-fill"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+
+                            Expert-Led Learning
+
+                        </h4>
+
+                        <p>
+
+                            Learn directly from experienced
+                            industry professionals through
+                            practical and interactive sessions.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="choose-card mt-4"
+
+                    data-aos="fade-right"
+
+                    data-aos-delay="200">
+
+                    <div class="choose-icon">
+
+                        <i class="ri-award-fill"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+
+                            Career Support
+
+                        </h4>
+
+                        <p>
+
+                            Resume building, interview
+                            preparation and placement
+                            guidance for every student.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+      
+
+            <div class="col-lg-4">
+
+                <div class="choose-image"
+
+                    data-aos="zoom-in">
+
+                    <img
+
+                        src="aboutimage4.webp"
+
+                        class="img-fluid"
+
+                        alt="Why Choose Stackly">
+
+                  
+
+                    <div class="image-badge">
+
+                        <i class="ri-user-star-fill"></i>
+
+                        <span>
+
+                            Trusted by
+                            50,000+ Students
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+     
+
+            <div class="col-lg-4">
+
+       
+
+                <div class="choose-card"
+
+                    data-aos="fade-left">
+
+                    <div class="choose-icon">
+
+                        <i class="ri-time-fill"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+
+                            Flexible Learning
+
+                        </h4>
+
+                        <p>
+
+                            Learn anytime, anywhere with
+                            live classes, recordings and
+                            mobile-friendly access.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            
+
+                <div class="choose-card mt-4"
+
+                    data-aos="fade-left"
+
+                    data-aos-delay="200">
+
+                    <div class="choose-icon">
+
+                        <i class="ri-team-fill"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+
+                            Student Community
+
+                        </h4>
+
+                        <p>
+
+                            Connect with thousands of
+                            learners, mentors and industry
+                            experts around the world.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="expert-section">
+
+    <div class="container">
+
+    
+
+        <div class="expert-heading text-center">
+
+            <span class="expert-badge"
+                data-aos="fade-up">
+
+                <i class="ri-user-star-fill"></i>
+
+                Meet Our Expert Mentors
+
+            </span>
+
+            <h2
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                Learn From
+
+                <span>Industry Professionals</span>
+
+            </h2>
+
+            <p
+                data-aos="fade-up"
+                data-aos-delay="400">
+
+                Our mentors bring years of real industry experience,
+                helping students master practical skills, build
+                professional portfolios, and confidently prepare
+                for successful careers.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4 mt-5">
+
+       
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="expert-card"
+                    data-aos="fade-up">
+
+                    <div class="expert-image">
+
+                        <img src="uiux.webp"
+                            class="img-fluid"
+                            alt="Mentor">
+
+                        <div class="expert-course">
+
+                            UI / UX Design
+
+                        </div>
+
+                    </div>
+
+                    <div class="expert-content">
+
+                        <h4>
+
+                          Mary Jane
+
+                        </h4>
+
+                        <span>
+
+                            Senior UI/UX Designer
+
+                        </span>
+
+                        <div class="expert-info">
+
+                            <div>
+
+                                <h5>10+</h5>
+
+                                <small>Years</small>
+
+                            </div>
+
+                            <div>
+
+                                <h5>42</h5>
+
+                                <small>Courses</small>
+
+                            </div>
+
+                            <div>
+
+                                <h5>18K+</h5>
+
+                                <small>Students</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="expert-social">
+
+                            <a href="#"
+                               class="expertBtn">
+
+                                <i class="ri-linkedin-box-fill"></i>
+
+                            </a>
+
+                            <a href="#"
+                               class="expertBtn">
+
+                                <i class="ri-github-fill"></i>
+
+                            </a>
+
+                            <a href="#"
+                               class="expertBtn">
+
+                                <i class="ri-global-line"></i>
+
+                            </a>
+
+                        </div>
+
+                        <a href="#"
+
+                           class="view-profile expertBtn">
+
+                            View Profile
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+           
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="expert-card"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
+
+                    <div class="expert-image">
+
+                        <img src="image10.webp"
+                            class="img-fluid"
+                            alt="Mentor">
+
+                        <div class="expert-course">
+
+                            Full Stack Development
+
+                        </div>
+
+                    </div>
+
+                    <div class="expert-content">
+
+                        <h4>
+
+                            Maria Ashvini
+                        </h4>
+
+                        <span>
+
+                            Senior Java Architect
+
+                        </span>
+
+                        <div class="expert-info">
+
+                            <div>
+
+                                <h5>12+</h5>
+
+                                <small>Years</small>
+
+                            </div>
+
+                            <div>
+
+                                <h5>55</h5>
+
+                                <small>Courses</small>
+
+                            </div>
+
+                            <div>
+
+                                <h5>24K+</h5>
+
+                                <small>Students</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="expert-social">
+
+                            <a href="#"
+                               class="expertBtn">
+
+                                <i class="ri-linkedin-box-fill"></i>
+
+                            </a>
+
+                            <a href="#"
+                               class="expertBtn">
+
+                                <i class="ri-github-fill"></i>
+
+                            </a>
+
+                            <a href="#"
+                               class="expertBtn">
+
+                                <i class="ri-global-line"></i>
+
+                            </a>
+
+                        </div>
+
+                        <a href="#"
+                           class="view-profile expertBtn">
+
+                            View Profile
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+           
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="expert-card"
+                    data-aos="fade-up"
+                    data-aos-delay="400">
+
+                    <div class="expert-image">
+
+                        <img src="trainer.webp"
+                            class="img-fluid"
+                            alt="Mentor">
+
+                        <div class="expert-course">
+
+                            Data Analytics
+
+                        </div>
+
+                    </div>
+
+                    <div class="expert-content">
+
+                        <h4>
+
+                            Gwen stacy
+
+                        </h4>
+
+                        <span>
+
+                            Data Science Mentor
+
+                        </span>
+
+                        <div class="expert-info">
+
+                            <div>
+
+                                <h5>9+</h5>
+
+                                <small>Years</small>
+
+                            </div>
+
+                            <div>
+
+                                <h5>37</h5>
+
+                                <small>Courses</small>
+
+                            </div>
+
+                            <div>
+
+                                <h5>16K+</h5>
+
+                                <small>Students</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="expert-social">
+
+                            <a href="#"
+                               class="expertBtn">
+
+                                <i class="ri-linkedin-box-fill"></i>
+
+                            </a>
+
+                            <a href="#"
+                               class="expertBtn">
+
+                                <i class="ri-github-fill"></i>
+
+                            </a>
+
+                            <a href="#"
+                               class="expertBtn">
+
+                                <i class="ri-global-line"></i>
+
+                            </a>
+
+                        </div>
+
+                        <a href="#"
+                           class="view-profile expertBtn">
+
+                            View Profile
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="student-review-section">
+
+    <div class="container">
+
+     
+
+        <div class="review-heading text-center">
+
+            <span class="review-badge"
+                data-aos="fade-up">
+
+                <i class="ri-chat-quote-fill"></i>
+
+                Student Testimonials
+
+            </span>
+
+            <h2
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                Hear From Our
+
+                <span>Successful Students</span>
+
+            </h2>
+
+            <p
+                data-aos="fade-up"
+                data-aos-delay="400">
+
+                Thousands of learners have transformed their careers through
+                expert mentorship, practical projects, and industry-focused
+                training at Stackly Education.
+
+            </p>
+
+        </div>
+
+
+        <div class="swiper review-slider"
+            data-aos="zoom-in">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                    <div class="review-card">
+
+                        <i class="ri-double-quotes-l quote-icon"></i>
+
+                        <div class="rating">
+
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+
+                        </div>
+
+                        <p>
+
+                            Java  Course completely changed my learning
+                            journey. The mentors explained every topic using
+                            practical projects, and I secured my first
+                            Full Stack Developer role after completing the course.
+
+                        </p>
+
+                        <div class="student-profile">
+
+                            <img src="student1.webp"
+
+                                alt="Student">
+
+                            <div>
+
+                                <h4>
+
+                                    Priya
+
+                                </h4>
+
+                                <span>
+
+                                    Full Stack Development Student
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="swiper-slide">
+
+                    <div class="review-card">
+
+                        <i class="ri-double-quotes-l quote-icon"></i>
+
+                        <div class="rating">
+
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+
+                        </div>
+
+                        <p>
+
+                            Every class was interactive and project-based.
+                            The UI/UX assignments helped me build an
+                            impressive portfolio and confidently attend interviews.
+
+                        </p>
+
+                        <div class="student-profile">
+
+                            <img src="student2.webp"
+
+                                alt="Student">
+
+                            <div>
+
+                                <h4>
+
+                                     Priyanka
+
+                                </h4>
+
+                                <span>
+
+                                    UI / UX Design Student
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+              
+                <div class="swiper-slide">
+
+                    <div class="review-card">
+
+                        <i class="ri-double-quotes-l quote-icon"></i>
+
+                        <div class="rating">
+
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+
+                        </div>
+
+                        <p>
+
+                            The Data Analytics program was well structured.
+                            Hands-on dashboards, mentor feedback and placement
+                            preparation made me industry-ready.
+
+                        </p>
+
+                        <div class="student-profile">
+
+                            <img src="student3.webp"
+
+                                alt="Student">
+
+                            <div>
+
+                                <h4>
+
+                                    Sanjai
+
+                                </h4>
+
+                                <span>
+
+                                    Data Analytics Student
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+          
+
+            <div class="swiper-button-next review-next"></div>
+
+            <div class="swiper-button-prev review-prev"></div>
+
+            
+
+            <div class="swiper-pagination review-pagination"></div>
+
+        </div>
+
+   
+
+        <div class="review-trust mt-5">
+
+            <div>
+
+                <h3>50K+</h3>
+
+                <span>Students</span>
+
+            </div>
+
+            <div>
+
+                <h3>4.9★</h3>
+
+                <span>Average Rating</span>
+
+            </div>
+
+            <div>
+
+                <h3>1200+</h3>
+
+                <span>Courses</span>
+
+            </div>
+
+            <div>
+
+                <h3>95%</h3>
+
+                <span>Student Satisfaction</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer-section">
+
+    <div class="container">
+
+        <div class="footer-wrapper">
+
+            <div class="row gy-5">
+
+         
+
+                <div class="col-lg-4 col-md-6">
+
+                    <a href="#" id="footerLogo" class="footer-logo">
+
+                        <img src="orglogo.webp"
+                            alt="Stackly"
+                            class="img-fluid">
+
+                    </a>
+
+                    <p class="footer-description">
+
+                        Empowering students through modern education,
+                        expert mentors, industry-ready skills, and
+                        globally recognized certifications for a
+                        successful future.
+
+                    </p>
+
+                    <h5 class="footer-social-title">
+
+                        Follow Us
+
+                    </h5>
+
+                    <div class="footer-social">
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-facebook-fill"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-instagram-line"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-linkedin-fill"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-youtube-fill"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-twitter-x-fill"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-6">
+
+                    <h4 class="footer-title">
+
+                        Quick Links
+
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+
+                            <a href="#">Home</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">About Us</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Services</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Testimonials</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Contact</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="footer-title">
+
+                        Learning Resources
+
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+
+                            <a href="#">Browse Courses</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Live Classes</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Career Programs</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Student Community</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Certificates</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="footer-title">
+
+                        Contact Us
+
+                    </h4>
+
+                    <ul class="footer-contact">
+
+                        <li>
+
+                            <i class="ri-phone-fill"></i>
+
+                            <span>+91 98765 43210</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-mail-fill"></i>
+
+                            <span>support@stacklyeducation.com</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-map-pin-2-fill"></i>
+
+                            <span>Chennai, Tamil Nadu, India</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-time-fill"></i>
+
+                            <span>Mon - Sat : 9 AM - 6 PM</span>
+
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                
+
+            </div>
+
+<hr class="footer-divider">
+
+<div class="footer-bottom">
+
+    <div class="footer-copyright">
+
+        <p>
+
+            &copy; 2026 <span>Stackly Education</span>.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+    <div class="footer-policy">
+
+        <a href="#" class="footer-policy-link">
+
+            Privacy Policy
+
+        </a>
+
+        <span>|</span>
+
+        <a href="#" class="footer-policy-link">
+
+            Terms & Conditions
+
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!--loader-->
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="loader.js"></script>
+<script src="cursor.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+window.addEventListener("pageshow", function (event) {
+
+    if (event.persisted) {
+
+        window.location.reload();
+
+    }
+
+});
+AOS.init({
+
+    duration:1000,
+
+    easing:"ease-out-cubic",
+
+    once:true,
+
+    offset:80
+
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+    const navLinks = document.querySelectorAll(".navbar .nav-link");
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", function () {
+
+            navLinks.forEach(item => item.classList.remove("active"));
+
+            this.classList.add("active");
+
+        });
+
+    });
+
+});
+
+
+const mobileLinks = document.querySelectorAll(".offcanvas .nav-link");
+
+mobileLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        const menu = bootstrap.Offcanvas.getInstance(
+            document.getElementById("mobileMenu")
+        );
+
+        if(menu){
+            menu.hide();
+        }
+
+    });
+
+});
+
+
+
+window.addEventListener("scroll",()=>{
+
+    const navbar = document.querySelector(".custom-navbar");
+
+    if(window.scrollY > 20){
+
+        navbar.classList.add("navbar-scroll");
+
+    }else{
+
+        navbar.classList.remove("navbar-scroll");
+
+    }
+
+});
+
+
+const aboutExploreBtn = document.getElementById("aboutExploreBtn");
+
+const aboutStoryBtn = document.getElementById("aboutStoryBtn");
+
+function aboutAlert(title){
+
+    Swal.fire({
+
+        icon:"info",
+
+        title:title,
+
+        html:`
+
+        <h4 style="color:#58A6FF;margin-bottom:12px;">
+
+            Welcome To Stackly Education
+
+        </h4>
+
+        <p style="line-height:1.8;font-size:16px;">
+
+            Discover career-focused learning,
+            practical projects, expert mentors,
+            and globally recognized certifications.
+
+            <br><br>
+
+            This feature is available in the
+            <b>Premium Version.</b>
+
+        </p>
+
+        `,
+
+        confirmButtonText:"Continue",
+
+        confirmButtonColor:"#0A74D8",
+
+        background:"#111827",
+
+        color:"#fff",
+
+        allowOutsideClick:false
+
+    }).then((result)=>{
+
+        if(result.isConfirmed){
+
+            window.location.href="error.html";
+
+        }
+
+    });
+
+}
+
+aboutExploreBtn.addEventListener("click",function(e){
+
+    e.preventDefault();
+
+    aboutAlert("Explore Courses");
+
+});
+
+aboutStoryBtn.addEventListener("click",function(e){
+
+    e.preventDefault();
+
+    aboutAlert("Our Journey");
+
+});
+
+
+const journeyButtons=document.querySelectorAll(".journeyBtn");
+
+journeyButtons.forEach(button=>{
+
+button.addEventListener("click",function(e){
+
+e.preventDefault();
+
+Swal.fire({
+
+icon:"info",
+
+title:"Student Success Journey",
+
+html:`
+
+<h4 style="color:#58A6FF;margin-bottom:15px;">
+
+Build Your Career With Stackly
+
+</h4>
+
+<p style="line-height:1.9;font-size:16px;">
+
+Gain practical knowledge through
+industry experts, real-world projects,
+career mentoring and globally recognized
+certifications.
+
+<br><br>
+
+This feature is available in the
+<b>Premium Version.</b>
+
+</p>
+
+`,
+
+confirmButtonText:"Continue",
+
+confirmButtonColor:"#0A74D8",
+
+background:"#111827",
+
+color:"#fff",
+
+allowOutsideClick:false
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+window.location.href="error.html";
+
+}
+
+});
+
+});
+
+});
+
+
+const aboutCtaBtn = document.getElementById("aboutCtaBtn");
+
+aboutCtaBtn.addEventListener("click",function(e){
+
+    e.preventDefault();
+
+    Swal.fire({
+
+        icon:"success",
+
+        title:"Start Your Learning Journey",
+
+        html:`
+
+        <h4 style="color:#58A6FF;margin-bottom:15px;">
+
+            Welcome To Stackly Education
+
+        </h4>
+
+        <p style="font-size:16px;line-height:1.9;">
+
+            Explore career-focused courses,
+            learn from expert mentors,
+            complete real-world projects,
+            and earn industry-recognized
+            certifications.
+
+            <br><br>
+
+            <b>Your success starts here.</b>
+
+        </p>
+
+        `,
+
+        confirmButtonText:"Explore Now",
+
+        confirmButtonColor:"#0A74D8",
+
+        background:"#111827",
+
+        color:"#fff",
+
+        allowOutsideClick:false,
+
+        backdrop:`
+        rgba(0,0,0,.75)
+        `
+
+    }).then((result)=>{
+
+        if(result.isConfirmed){
+
+            window.location.href="error.html";
+
+        }
+
+    });
+
+});
+
+
+const expertButtons = document.querySelectorAll(".expertBtn");
+
+expertButtons.forEach(button=>{
+
+    button.addEventListener("click",function(e){
+
+        e.preventDefault();
+
+        Swal.fire({
+
+            icon:"info",
+
+            title:"Mentor Profile",
+
+            html:`
+
+            <h3 style="color:#58A6FF;margin-bottom:15px;">
+
+                Learn From Industry Experts
+
+            </h3>
+
+            <p style="font-size:16px;line-height:1.9;">
+
+                Explore mentor profiles, professional
+                experience, featured courses, GitHub
+                repositories, LinkedIn achievements
+                and career guidance resources.
+
+                <br><br>
+
+                <b>This feature is available in the Premium Version.</b>
+
+            </p>
+
+            `,
+
+            confirmButtonText:"View Details",
+
+            confirmButtonColor:"#0A74D8",
+
+            background:"#111827",
+
+            color:"#fff",
+
+            allowOutsideClick:false
+
+        }).then((result)=>{
+
+            if(result.isConfirmed){
+
+                window.location.href="error.html";
+
+            }
+
+        });
+
+    });
+
+});
+
+
+const reviewSwiper = new Swiper(".review-slider",{
+
+    loop:true,
+
+    speed:900,
+
+    spaceBetween:30,
+
+    centeredSlides:false,
+
+    grabCursor:true,
+
+    autoplay:{
+
+        delay:4000,
+
+        disableOnInteraction:false,
+
+        pauseOnMouseEnter:true
+
+    },
+
+    pagination:{
+
+        el:".review-pagination",
+
+        clickable:true,
+
+    },
+
+    navigation:{
+
+        nextEl:".review-next",
+
+        prevEl:".review-prev",
+
+    },
+
+    breakpoints:{
+
+        0:{
+
+            slidesPerView:1,
+
+            spaceBetween:20
+
+        },
+
+        768:{
+
+            slidesPerView:1,
+
+            spaceBetween:25
+
+        },
+
+        1200:{
+
+            slidesPerView:1,
+
+            spaceBetween:30
+
+        }
+
+    }
+
+});
+const footerLinks = document.querySelectorAll(
+".footer-links a,.footer-policy-link,.social-link,#footerLogo"
+);
+
+footerLinks.forEach(link=>{
+
+link.addEventListener("click",function(e){
+
+e.preventDefault();
+
+Swal.fire({
+
+icon:"info",
+
+title:"Stackly Education",
+
+text:"This feature is available in the premium version.",
+
+confirmButtonText:"Continue",
+
+confirmButtonColor:"#0A74D8",
+
+background:"#1b1b1b",
+
+color:"#fff",
+
+allowOutsideClick:false
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+window.location.href="error.html";
+
+}
+
+});
+
+});
+
+});
+</script>
+
+</body>
+</html>

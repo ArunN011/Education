@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="loader.css">
+<link rel="stylesheet" href="blog.css">
+
+
+    <title>Education</title>
+</head>
+<body>
+    <!--cursor !-->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+  
+<div id="preloader">
+    <div class="loader-bg"></div>
+
+    <span class="particle p1"></span>
+    <span class="particle p2"></span>
+    <span class="particle p3"></span>
+    <span class="particle p4"></span>
+    <span class="particle p5"></span>
+
+    <div class="loader-content">
+        <img
+            src="stacklylogoimg.png"
+            class="loader-logo"
+            alt="Stackly Logo">
+        <img
+            src="stacklyletter.png"
+            class="loader-text"
+            alt="Stackly">
+
+        <h4 class="loader-title">
+            Empowering Education Through Technology
+        </h4>
+        <p id="loading-message">
+
+            Preparing Your Learning Experience...
+
+        </p>
+        <div class="progress-box">
+
+            <div class="progress-fill"></div>
+
+        </div>
+
+        <h5 id="loading-percent">
+
+            0%
+
+        </h5>
+
+    </div>
+
+</div>
+<div id="website">
+
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+
+    <div class="container">
+        <button class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu">
+
+            <i class="ri-menu-3-line"></i>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-center">
+
+           <ul class="navbar-nav align-items-center">
+
+         <li class="nav-item logo-item">
+
+                    <a href="index.html">
+
+                        <img src="orglogo.webp"
+                            class="logo"
+                            alt="Stackly">
+
+                    </a>
+
+    </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Service</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="d-none d-lg-block">
+
+            <a href="signup.html" class="signup-btn">
+
+                Sign up
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="offcanvas offcanvas-end custom-offcanvas"
+    tabindex="-1"
+    id="mobileMenu">
+
+    <div class="offcanvas-header">
+            <a href="index.html">
+        <img src="orglogo.webp"
+            class="mobile-logo"
+            alt="Stackly">
+            </a>
+
+        <button type="button"
+            class="btn-close btn-close-white shadow-none"
+            data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <ul class="navbar-nav text-center">
+
+            <li class="nav-item">
+
+                <a class="nav-link active" href="index.html">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="about.html">
+
+                    About us
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="service.html">
+
+                    Service
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="blog.html">
+
+                    Blog
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="contact.html">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="text-center mt-4">
+
+            <a href="signup.html" class="signup-btn mobile-btn">
+
+                Sign up
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<section class="blog-hero">
+
+    <div class="blog-overlay"></div>
+
+    <div class="container">
+
+        <div class="row align-items-center min-vh-100">
+
+      
+
+            <div class="col-lg-7">
+
+                <div class="blog-hero-content">
+
+                    <span class="blog-badge"
+                        data-aos="fade-up">
+
+                        <i class="ri-article-fill"></i>
+
+                        Knowledge Hub
+
+                    </span>
+
+                    <h1
+                        data-aos="fade-up"
+                        data-aos-delay="200">
+
+                        Learn.
+
+                        <span>Explore.</span>
+
+                        Grow With Every Article.
+
+                    </h1>
+
+                    <p
+                        data-aos="fade-up"
+                        data-aos-delay="400">
+
+                        Stay ahead with expert programming tutorials,
+                        AI innovations, cloud computing insights,
+                        cybersecurity tips and career guidance written
+                        by experienced professionals.
+
+                    </p>
+
+                    <div class="hero-buttons"
+                        data-aos="fade-up"
+                        data-aos-delay="600">
+
+                        <a href="#latestBlogs"
+
+                            class="blog-btn-primary">
+
+                            <i class="ri-book-open-fill"></i>
+
+                            Read Latest Blogs
+
+                        </a>
+
+                        <a href="#categories"
+
+                            class="blog-btn-secondary">
+
+                            <i class="ri-compass-3-fill"></i>
+
+                            Explore Topics
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <div class="blog-hero-right">
+
+                    <div class="glass-blog-card"
+
+                        data-aos="fade-left"
+
+                        data-aos-delay="300">
+
+                        <div class="glass-icon">
+
+                            <i class="ri-fire-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>Trending Article</span>
+
+                            <h5>
+
+                                AI Revolution
+
+                            </h5>
+
+                            <small>
+
+                                8 min Read
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="glass-blog-card"
+
+                        data-aos="fade-left"
+
+                        data-aos-delay="500">
+
+                        <div class="glass-icon">
+
+                            <i class="ri-code-box-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>Developer Guide</span>
+
+                            <h5>
+
+                                Spring Boot 2026
+
+                            </h5>
+
+                            <small>
+
+                                12 min Read
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="glass-blog-card"
+
+                        data-aos="fade-left"
+
+                        data-aos-delay="700">
+
+                        <div class="glass-icon">
+
+                            <i class="ri-cloud-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>Cloud Computing</span>
+
+                            <h5>
+
+                                AWS Essentials
+
+                            </h5>
+
+                            <small>
+
+                                Beginner Friendly
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="blog-stats">
+
+            <div class="stat-card">
+
+                <h3>250+</h3>
+
+                <span>Articles</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>45+</h3>
+
+                <span>Expert Writers</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>120K+</h3>
+
+                <span>Monthly Readers</span>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>20+</h3>
+
+                <span>Categories</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="latest-blog-section" id="latestBlogs">
+
+    <div class="container">
+
+
+        <div class="section-title text-center mb-5">
+
+            <span class="blog-small-title">
+
+                <i class="ri-book-2-fill"></i>
+
+                Latest Articles
+
+            </span>
+
+            <h2>
+
+                Explore Our
+
+                <span>Latest Blogs</span>
+
+            </h2>
+
+            <p>
+
+                Discover programming tutorials, AI innovations, cloud technologies,
+                career guidance and software development articles.
+
+            </p>
+
+        </div>
+
+  
+
+        <div class="row g-4">
+
+        
+
+            <div class="col-xl-4 col-md-6">
+
+                <div class="blog-card">
+
+                    <div class="blog-image">
+
+                        <img src="program.webp"
+                            class="img-fluid">
+
+                        <span class="category">
+
+                            Programming
+
+                        </span>
+
+                    </div>
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+
+                            <span>
+
+                                <i class="ri-calendar-line"></i>
+
+                                July 12,2026
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-time-line"></i>
+
+                                8 Min
+
+                            </span>
+
+                        </div>
+
+                        <h4>
+
+                            Complete Java Roadmap
+                            For Beginners
+
+                        </h4>
+
+                        <p>
+
+                            Learn Java from basics to
+                            advanced concepts with
+                            practical projects.
+
+                        </p>
+
+                        <a href="error.html"
+                            class="read-btn">
+
+                            Read Article
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-4 col-md-6">
+
+                <div class="blog-card">
+
+                    <div class="blog-image">
+
+                        <img src="Ai.webp"
+                            class="img-fluid">
+
+                        <span class="category">
+
+                            AI
+
+                        </span>
+
+                    </div>
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+
+                            <span>
+
+                                <i class="ri-calendar-line"></i>
+
+                                July 10,2026
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-time-line"></i>
+
+                                10 Min
+
+                            </span>
+
+                        </div>
+
+                        <h4>
+
+                            Artificial Intelligence
+                            Trends In 2026
+
+                        </h4>
+
+                        <p>
+
+                            Discover how AI is changing
+                            software engineering and
+                            business applications.
+
+                        </p>
+
+                        <a href="error.html"
+                            class="read-btn">
+
+                            Read Article
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+          
+
+            <div class="col-xl-4 col-md-6">
+
+                <div class="blog-card">
+
+                    <div class="blog-image">
+
+                        <img src="aws.webp"
+                            class="img-fluid">
+
+                        <span class="category">
+
+                            Cloud
+
+                        </span>
+
+                    </div>
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+
+                            <span>
+
+                                <i class="ri-calendar-line"></i>
+
+                                July 08,2026
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-time-line"></i>
+
+                                12 Min
+
+                            </span>
+
+                        </div>
+
+                        <h4>
+
+                            AWS Cloud Complete
+                            Learning Guide
+
+                        </h4>
+
+                        <p>
+
+                            Master AWS fundamentals,
+                            deployment and cloud
+                            architecture.
+
+                        </p>
+
+                        <a href="error.html"
+                            class="read-btn">
+
+                            Read Article
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+          
+            <div class="col-xl-4 col-md-6">
+
+                <div class="blog-card">
+
+                    <div class="blog-image">
+
+                        <img src="spring.webp"
+                            class="img-fluid">
+
+                        <span class="category">
+
+                           Spring AI
+
+                        </span>
+
+                    </div>
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+
+                            <span>
+
+                                <i class="ri-calendar-line"></i>
+
+                                July 010,2026
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-time-line"></i>
+
+                                12 Min
+
+                            </span>
+
+                        </div>
+
+                        <h4>
+
+                            Spring Ai Complete
+                            Learning Guide
+
+                        </h4>
+
+                        <p>
+
+                            Master SPring fundamentals,
+                            deployment and Ai
+                            architecture.
+
+                        </p>
+
+                        <a href="error.html"
+                            class="read-btn">
+
+                            Read Article
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+
+
+            <div class="col-xl-4 col-md-6">
+
+                <div class="blog-card">
+
+                    <div class="blog-image">
+
+                        <img src="ui.webp"
+                            class="img-fluid">
+
+                        <span class="category">
+
+                           Ui/Ux
+
+                        </span>
+
+                    </div>
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+
+                            <span>
+
+                                <i class="ri-calendar-line"></i>
+
+                                July 07,2026
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-time-line"></i>
+
+                                10 Min
+
+                            </span>
+
+                        </div>
+
+                        <h4>
+
+                            Figma design Complete
+                            Learning Guide
+
+                        </h4>
+
+                        <p>
+
+                            Master Figma fundamentals,
+                            deployment and design
+                            architecture.
+
+                        </p>
+
+                        <a href="error.html"
+                            class="read-btn">
+
+                            Read Article
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+    
+            <div class="col-xl-4 col-md-6">
+
+                <div class="blog-card">
+
+                    <div class="blog-image">
+
+                        <img src="cyber.webp"
+                            class="img-fluid">
+
+                        <span class="category">
+
+                             Cyber Security
+
+                        </span>
+
+                    </div>
+
+                    <div class="blog-content">
+
+                        <div class="blog-meta">
+
+                            <span>
+
+                                <i class="ri-calendar-line"></i>
+
+                                July 08,2026
+
+                            </span>
+
+                            <span>
+
+                                <i class="ri-time-line"></i>
+
+                                12 Min
+
+                            </span>
+
+                        </div>
+
+                        <h4>
+
+                            Cyper Security Complete
+                            Learning Guide
+
+                        </h4>
+
+                        <p>
+
+                            security  fundamentals,
+                            deployment and Cyber 
+                            architecture.
+
+                        </p>
+
+                        <a href="error.html"
+                            class="read-btn">
+
+                            Read Article
+
+                            <i class="ri-arrow-right-line"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+         
+
+        </div>
+
+    
+
+        <nav class="blog-pagination">
+
+            <ul>
+
+                <li>
+
+                    <a href="error.html">
+
+                        <i class="ri-arrow-left-s-line"></i>
+
+                        Prev
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html"
+                        class="active">
+
+                        1
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html">
+
+                        2
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html">
+
+                        3
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="error.html">
+
+                        Next
+
+                        <i class="ri-arrow-right-s-line"></i>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</section>
+
+<section class="newsletter-section">
+
+    <div class="container">
+
+        <div class="newsletter-wrapper">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6">
+
+                    <div class="newsletter-content">
+
+                        <span class="newsletter-badge"
+                            data-aos="fade-up">
+
+                            <i class="ri-mail-send-fill"></i>
+
+                            Join Our Learning Community
+
+                        </span>
+
+                        <h2
+                            data-aos="fade-up"
+                            data-aos-delay="200">
+
+                            Stay Ahead With
+
+                            <span>Weekly Tech Insights</span>
+
+                        </h2>
+
+                        <p
+                            data-aos="fade-up"
+                            data-aos-delay="400">
+
+                            Receive exclusive programming tutorials,
+                            AI updates,
+                            interview preparation,
+                            career guidance
+                            and software development articles directly
+                            in your inbox.
+
+                        </p>
+
+                        <div class="newsletter-feature">
+
+                            <div>
+
+                                <i class="ri-checkbox-circle-fill"></i>
+
+                                Weekly Articles
+
+                            </div>
+
+                            <div>
+
+                                <i class="ri-checkbox-circle-fill"></i>
+
+                                Career Guidance
+
+                            </div>
+
+                            <div>
+
+                                <i class="ri-checkbox-circle-fill"></i>
+
+                                Interview Tips
+
+                            </div>
+
+                            <div>
+
+                                <i class="ri-checkbox-circle-fill"></i>
+
+                                No Spam
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="newsletter-card">
+
+                        <h3>
+
+                            Subscribe Today
+
+                        </h3>
+
+                        <p>
+
+                            Join over
+
+                            <strong>
+
+                                35,000+
+
+                            </strong>
+
+                            learners.
+
+                        </p>
+
+                        <form id="newsletterForm">
+
+                            <div class="newsletter-input">
+
+                                <i class="ri-mail-fill"></i>
+
+                                <input
+
+                                    type="email"
+
+                                    id="newsletterEmail"
+
+                                    placeholder="Enter your email address"
+
+                                    required>
+
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="newsletter-btn">
+
+                                <i class="ri-send-plane-fill"></i>
+
+                                Subscribe Now
+
+                            </button>
+
+                        </form>
+
+
+                        <div class="newsletter-stats">
+
+                            <div>
+
+                                <h4>250+</h4>
+
+                                <span>Articles</span>
+
+                            </div>
+
+                            <div>
+
+                                <h4>35K+</h4>
+
+                                <span>Subscribers</span>
+
+                            </div>
+
+                            <div>
+
+                                <h4>120K+</h4>
+
+                                <span>Readers</span>
+
+                            </div>
+
+                            <div>
+
+                                <h4>45+</h4>
+
+                                <span>Experts</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer-section">
+
+    <div class="container">
+
+        <div class="footer-wrapper">
+
+            <div class="row gy-5">
+
+         
+
+                <div class="col-lg-4 col-md-6">
+
+                    <a href="#" id="footerLogo" class="footer-logo">
+
+                        <img src="orglogo.webp"
+                            alt="Stackly"
+                            class="img-fluid">
+
+                    </a>
+
+                    <p class="footer-description">
+
+                        Empowering students through modern education,
+                        expert mentors, industry-ready skills, and
+                        globally recognized certifications for a
+                        successful future.
+
+                    </p>
+
+                    <h5 class="footer-social-title">
+
+                        Follow Us
+
+                    </h5>
+
+                    <div class="footer-social">
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-facebook-fill"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-instagram-line"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-linkedin-fill"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-youtube-fill"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-twitter-x-fill"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-6">
+
+                    <h4 class="footer-title">
+
+                        Quick Links
+
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+
+                            <a href="#">Home</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">About Us</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Services</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Testimonials</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Contact</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="footer-title">
+
+                        Learning Resources
+
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+
+                            <a href="#">Browse Courses</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Live Classes</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Career Programs</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Student Community</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Certificates</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="footer-title">
+
+                        Contact Us
+
+                    </h4>
+
+                    <ul class="footer-contact">
+
+                        <li>
+
+                            <i class="ri-phone-fill"></i>
+
+                            <span>+91 98765 43210</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-mail-fill"></i>
+
+                            <span>support@stacklyeducation.com</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-map-pin-2-fill"></i>
+
+                            <span>Chennai, Tamil Nadu, India</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-time-fill"></i>
+
+                            <span>Mon - Sat : 9 AM - 6 PM</span>
+
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                
+
+            </div>
+
+<hr class="footer-divider">
+
+<div class="footer-bottom">
+
+    <div class="footer-copyright">
+
+        <p>
+
+            &copy; 2026 <span>Stackly Education</span>.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+    <div class="footer-policy">
+
+        <a href="#" class="footer-policy-link">
+
+            Privacy Policy
+
+        </a>
+
+        <span>|</span>
+
+        <a href="#" class="footer-policy-link">
+
+            Terms & Conditions
+
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+
+
+
+
+
+<!--loader-->
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="loader.js"></script>
+<script src="cursor.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+     window.addEventListener("pageshow", function (event) {
+
+    if (event.persisted) {
+
+        window.location.reload();
+
+    }
+
+});
+AOS.init({
+
+    duration:1000,
+
+    easing:"ease-out-cubic",
+
+    once:true,
+
+    offset:80
+
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+    const navLinks = document.querySelectorAll(".navbar .nav-link");
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", function () {
+
+            navLinks.forEach(item => item.classList.remove("active"));
+
+            this.classList.add("active");
+
+        });
+
+    });
+
+});
+
+
+const mobileLinks = document.querySelectorAll(".offcanvas .nav-link");
+
+mobileLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        const menu = bootstrap.Offcanvas.getInstance(
+            document.getElementById("mobileMenu")
+        );
+
+        if(menu){
+            menu.hide();
+        }
+
+    });
+
+});
+
+
+
+window.addEventListener("scroll",()=>{
+
+    const navbar = document.querySelector(".custom-navbar");
+
+    if(window.scrollY > 20){
+
+        navbar.classList.add("navbar-scroll");
+
+    }else{
+
+        navbar.classList.remove("navbar-scroll");
+
+    }
+
+});
+
+
+const readBtn=document.querySelector(".blog-btn-primary");
+
+readBtn.addEventListener("click",function(e){
+
+e.preventDefault();
+
+Swal.fire({
+
+icon:"info",
+
+title:"Latest Articles",
+
+html:`
+
+<h3 style="color:#58A6FF;">
+
+Stackly Knowledge Hub
+
+</h3>
+
+<p style="line-height:1.9;">
+
+Explore programming tutorials,
+AI innovations,
+Cloud Computing,
+Cyber Security,
+Career Guidance,
+UI/UX Design
+and many more educational articles.
+
+<br><br>
+
+<b>
+
+More articles will be available soon.
+
+</b>
+
+</p>
+
+`,
+
+background:"#111827",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8",
+
+confirmButtonText:"Explore"
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+window.location.href="error.html";
+
+}
+
+});
+
+});
+
+
+const explore=document.querySelector(".blog-btn-secondary");
+
+explore.addEventListener("click",function(e){
+
+e.preventDefault();
+
+Swal.fire({
+
+icon:"info",
+
+title:"Latest Articles",
+
+html:`
+
+<h3 style="color:#58A6FF;">
+
+Stackly Knowledge Hub
+
+</h3>
+
+<p style="line-height:1.9;">
+
+Explore programming tutorials,
+AI innovations,
+Cloud Computing,
+Cyber Security,
+Career Guidance,
+UI/UX Design
+and many more educational articles.
+
+<br><br>
+
+<b>
+
+More articles will be available soon.
+
+</b>
+
+</p>
+
+`,
+
+background:"#111827",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8",
+
+confirmButtonText:"Explore"
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+window.location.href="error.html";
+
+}
+
+});
+
+});
+
+const blogButtons=document.querySelectorAll(".read-btn");
+
+blogButtons.forEach(button=>{
+
+button.addEventListener("click",function(e){
+
+e.preventDefault();
+
+Swal.fire({
+
+icon:"info",
+
+title:"Blog Article",
+
+html:`
+
+<h3 style="color:#58A6FF;margin-bottom:15px;">
+
+Stackly Knowledge Hub
+
+</h3>
+
+<p style="line-height:1.9;">
+
+Read detailed tutorials,
+career guidance,
+AI,
+Cloud Computing,
+Programming,
+Cyber Security
+and many more educational articles.
+
+<br><br>
+
+<b>
+
+Full article will be available soon.
+
+</b>
+
+</p>
+
+`,
+
+background:"#111827",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8",
+
+confirmButtonText:"Read Now"
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+window.location.href="error.html";
+
+}
+
+});
+
+});
+
+});
+const paginationLinks=document.querySelectorAll(".blog-pagination a");
+
+paginationLinks.forEach(link=>{
+
+link.addEventListener("click",function(e){
+
+e.preventDefault();
+
+window.location.href="error.html";
+
+});
+
+});
+
+
+const newsletterForm=document.getElementById("newsletterForm");
+
+newsletterForm.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const email=document.getElementById("newsletterEmail").value.trim();
+
+const emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(email===""){
+
+Swal.fire({
+
+icon:"warning",
+
+title:"Email Required",
+
+text:"Please enter your email address.",
+
+background:"#111827",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8"
+
+});
+
+return;
+
+}
+
+if(!emailPattern.test(email)){
+
+Swal.fire({
+
+icon:"error",
+
+title:"Invalid Email",
+
+text:"Please enter a valid email address.",
+
+background:"#111827",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8"
+
+});
+
+return;
+
+}
+
+Swal.fire({
+
+icon:"success",
+
+title:"Subscription Successful!",
+
+html:`
+
+<h3 style="color:#58A6FF;">
+
+Welcome To Stackly Community
+
+</h3>
+
+<p style="line-height:1.9;">
+
+Thank you for subscribing.
+
+You'll receive programming tutorials,
+AI updates,
+career guidance,
+cloud computing articles,
+and interview tips directly in your inbox.
+
+</p>
+
+`,
+
+background:"#111827",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8",
+
+confirmButtonText:"Continue"
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+window.location.href="error.html";
+
+}
+
+});
+
+newsletterForm.reset();
+
+});
+const footerLinks = document.querySelectorAll(
+".footer-links a,.footer-policy-link,.social-link,#footerLogo"
+);
+
+footerLinks.forEach(link=>{
+
+link.addEventListener("click",function(e){
+
+e.preventDefault();
+
+Swal.fire({
+
+icon:"info",
+
+title:"Stackly Education",
+
+text:"This feature is available in the premium version.",
+
+confirmButtonText:"Continue",
+
+confirmButtonColor:"#0A74D8",
+
+background:"#1b1b1b",
+
+color:"#fff",
+
+allowOutsideClick:false
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+window.location.href="error.html";
+
+}
+
+});
+
+});
+
+});
+</script>
+
+</body>
+</html>

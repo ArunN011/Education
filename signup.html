@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Register | Stackly Education</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link rel="stylesheet" href="register.css">
+<link rel="stylesheet" href="loader.css">
+
+</head>
+
+<body>
+
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+  
+<div id="preloader">
+    <div class="loader-bg"></div>
+
+    <span class="particle p1"></span>
+    <span class="particle p2"></span>
+    <span class="particle p3"></span>
+    <span class="particle p4"></span>
+    <span class="particle p5"></span>
+ <div class="loader-content">
+        <img
+            src="stacklylogoimg.png"
+            class="loader-logo"
+            alt="Stackly Logo">
+        <img
+            src="stacklyletter.png"
+            class="loader-text"
+            alt="Stackly">
+
+        <h4 class="loader-title">
+            Empowering Education Through Technology
+        </h4>
+        <p id="loading-message">
+
+            Preparing Your Learning Experience...
+
+        </p>
+        <div class="progress-box">
+
+            <div class="progress-fill"></div>
+
+        </div>
+
+        <h5 id="loading-percent">
+
+            0%
+
+        </h5>
+
+    </div>
+
+</div>
+
+ <div id="website">
+
+    
+<section class="register-section">
+
+<div class="register-wrapper">
+
+
+<div class="signup-top">
+
+<a href="index.html"
+
+class="back-home-btn">
+
+<i class="ri-arrow-left-line"></i>
+
+Back To Home
+
+</a>
+
+</div>
+
+
+
+<div class="register-card">
+
+<span class="register-badge">
+
+<i class="ri-user-add-fill"></i>
+
+Create Account
+
+</span>
+
+<h2>
+
+Welcome To
+
+<span>
+
+Stackly
+
+</span>
+
+</h2>
+
+<p>
+
+Create your account and begin
+your learning journey.
+
+</p>
+
+
+
+<form id="registerForm">
+
+
+<div class="mb-3">
+
+<label>
+
+Full Name
+
+</label>
+
+<input
+
+type="text"
+
+id="name"
+
+class="form-control custom-input"
+
+placeholder="Enter your full name">
+
+<small id="nameError"
+
+class="error-text">
+
+</small>
+
+</div>
+
+
+
+<div class="mb-3">
+
+<label>
+
+Email Address
+
+</label>
+
+<input
+
+type="email"
+
+id="email"
+
+class="form-control custom-input"
+
+placeholder="Enter your email">
+
+<small id="emailError"
+
+class="error-text">
+
+</small>
+
+</div>
+
+
+
+<div class="mb-3">
+
+<label>
+
+Mobile Number
+
+</label>
+
+<input
+
+type="tel"
+
+id="mobile"
+
+maxlength="10"
+
+class="form-control custom-input"
+
+placeholder="Enter mobile number">
+
+<small id="mobileError"
+
+class="error-text">
+
+</small>
+
+</div>
+
+
+
+<div class="mb-3">
+
+<label>
+
+Select Role
+
+</label>
+
+<select
+
+id="role"
+
+class="form-select custom-input">
+
+<option value="">
+
+Select Role
+
+</option>
+
+<option value="student">
+
+Student
+
+</option>
+
+<option value="admin">
+
+Admin
+
+</option>
+
+</select>
+
+<small id="roleError"
+
+class="error-text">
+
+</small>
+
+</div>
+
+<div class="mb-3">
+
+<label>
+
+Password
+
+</label>
+
+<div class="password-box">
+
+<input
+
+type="password"
+
+id="password"
+
+class="form-control custom-input"
+
+placeholder="Create password">
+
+<i
+
+class="ri-eye-line togglePassword"
+
+toggle="#password">
+
+</i>
+
+</div>
+
+<div class="password-strength">
+
+<div id="strengthBar"></div>
+
+</div>
+
+<small id="passwordError"
+
+class="error-text">
+
+</small>
+
+</div>
+
+
+<div class="mb-3">
+
+<label>
+
+Confirm Password
+
+</label>
+
+<div class="password-box">
+
+<input
+
+type="password"
+
+id="confirmPassword"
+
+class="form-control custom-input"
+
+placeholder="Confirm password">
+
+<i
+
+class="ri-eye-line togglePassword"
+
+toggle="#confirmPassword">
+
+</i>
+
+</div>
+
+<small id="confirmPasswordError"
+
+class="error-text">
+
+</small>
+
+</div>
+
+
+<div class="form-check mb-4">
+
+<input
+
+class="form-check-input"
+
+type="checkbox"
+
+id="terms">
+
+<label
+
+class="form-check-label"
+
+for="terms">
+
+I agree to the
+
+<a href="error.html">
+
+Terms & Conditions
+
+</a>
+
+</label>
+
+<br>
+
+<small
+
+id="termsError"
+
+class="error-text">
+
+</small>
+
+</div>
+
+
+<button
+
+type="submit"
+
+class="register-btn">
+
+<i class="ri-user-add-fill"></i>
+
+Create Account
+
+</button>
+
+</form>
+
+
+<div class="divider">
+
+<span>
+
+OR
+
+</span>
+
+</div>
+
+
+<div class="social-login">
+
+<a href="error.html">
+
+<i class="ri-google-fill"></i>
+
+</a>
+
+<a href="error.html">
+
+<i class="ri-github-fill"></i>
+
+</a>
+
+<a href="error.html">
+
+<i class="ri-linkedin-box-fill"></i>
+
+</a>
+
+</div>
+
+
+<div class="login-link">
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="loader.js"></script>
+<script src="cursor.js"></script>
+<script>
+  
+
+const registerForm=document.getElementById("registerForm");
+
+const name=document.getElementById("name");
+const email=document.getElementById("email");
+const mobile=document.getElementById("mobile");
+const role=document.getElementById("role");
+const password=document.getElementById("password");
+const confirmPassword=document.getElementById("confirmPassword");
+const terms=document.getElementById("terms");
+
+const strengthBar=document.getElementById("strengthBar");
+
+const nameError=document.getElementById("nameError");
+const emailError=document.getElementById("emailError");
+const mobileError=document.getElementById("mobileError");
+const roleError=document.getElementById("roleError");
+const passwordError=document.getElementById("passwordError");
+const confirmPasswordError=document.getElementById("confirmPasswordError");
+const termsError=document.getElementById("termsError");
+
+
+function showError(input,error,message){
+
+input.classList.add("input-error");
+
+input.classList.remove("input-success");
+
+error.innerHTML=message;
+
+}
+
+function showSuccess(input,error){
+
+input.classList.remove("input-error");
+
+input.classList.add("input-success");
+
+error.innerHTML="";
+
+}
+
+
+
+function validateName(){
+
+const value=name.value.trim();
+
+if(value===""){
+
+showError(name,nameError,"Full Name is required.");
+
+return false;
+
+}
+
+if(value.length<3){
+
+showError(name,nameError,"Minimum 3 characters required.");
+
+return false;
+
+}
+
+if(!/^[A-Za-z ]+$/.test(value)){
+
+showError(name,nameError,"Only letters are allowed.");
+
+return false;
+
+}
+
+showSuccess(name,nameError);
+
+return true;
+
+}
+
+
+function validateEmail(){
+
+const pattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(email.value.trim()===""){
+
+showError(email,emailError,"Email is required.");
+
+return false;
+
+}
+
+if(!pattern.test(email.value.trim())){
+
+showError(email,emailError,"Enter a valid email.");
+
+return false;
+
+}
+
+showSuccess(email,emailError);
+
+return true;
+
+}
+
+
+
+mobile.addEventListener("input",function(){
+
+this.value=this.value.replace(/\D/g,"").slice(0,10);
+
+});
+
+function validateMobile(){
+
+const pattern=/^[6-9]\d{9}$/;
+
+if(mobile.value===""){
+
+showError(mobile,mobileError,"Mobile Number is required.");
+
+return false;
+
+}
+
+if(!pattern.test(mobile.value)){
+
+showError(mobile,mobileError,"Enter valid 10 digit number.");
+
+return false;
+
+}
+
+showSuccess(mobile,mobileError);
+
+return true;
+
+}
+
+
+function validateRole(){
+
+if(role.value===""){
+
+showError(role,roleError,"Please select role.");
+
+return false;
+
+}
+
+showSuccess(role,roleError);
+
+return true;
+
+}
+
+
+password.addEventListener("input",passwordStrength);
+
+function passwordStrength(){
+
+const value=password.value;
+
+let strength=0;
+
+if(value.length>=8) strength++;
+
+if(/[A-Z]/.test(value)) strength++;
+
+if(/[a-z]/.test(value)) strength++;
+
+if(/[0-9]/.test(value)) strength++;
+
+if(/[^A-Za-z0-9]/.test(value)) strength++;
+
+if(strength<=2){
+
+strengthBar.style.width="30%";
+
+strengthBar.style.background="#ff4d4d";
+
+}
+
+else if(strength<=4){
+
+strengthBar.style.width="70%";
+
+strengthBar.style.background="#ffc107";
+
+}
+
+else{
+
+strengthBar.style.width="100%";
+
+strengthBar.style.background="#2ecc71";
+
+}
+
+}
+
+function validatePassword(){
+
+const value=password.value;
+
+const pattern=
+
+/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+
+if(value===""){
+
+showError(password,passwordError,"Password is required.");
+
+return false;
+
+}
+
+if(!pattern.test(value)){
+
+showError(password,passwordError,
+
+"8+ chars, uppercase, lowercase, number & special character required.");
+
+return false;
+
+}
+
+showSuccess(password,passwordError);
+
+return true;
+
+}
+
+
+
+function validateConfirmPassword(){
+
+if(confirmPassword.value===""){
+
+showError(confirmPassword,
+
+confirmPasswordError,
+
+"Confirm Password is required.");
+
+return false;
+
+}
+
+if(confirmPassword.value!==password.value){
+
+showError(confirmPassword,
+
+confirmPasswordError,
+
+"Passwords do not match.");
+
+return false;
+
+}
+
+showSuccess(confirmPassword,
+
+confirmPasswordError);
+
+return true;
+
+}
+
+function validateTerms(){
+
+if(!terms.checked){
+
+termsError.innerHTML="Accept Terms & Conditions.";
+
+return false;
+
+}
+
+termsError.innerHTML="";
+
+return true;
+
+}
+
+
+
+document.querySelectorAll(".togglePassword")
+
+.forEach(icon=>{
+
+icon.addEventListener("click",function(){
+
+const input=document.querySelector(
+
+this.getAttribute("toggle")
+
+);
+
+if(input.type==="password"){
+
+input.type="text";
+
+this.classList.remove("ri-eye-line");
+
+this.classList.add("ri-eye-off-line");
+
+}
+
+else{
+
+input.type="password";
+
+this.classList.remove("ri-eye-off-line");
+
+this.classList.add("ri-eye-line");
+
+}
+
+});
+
+});
+
+name.addEventListener("input",validateName);
+
+email.addEventListener("input",validateEmail);
+
+mobile.addEventListener("input",validateMobile);
+
+role.addEventListener("change",validateRole);
+
+password.addEventListener("input",validatePassword);
+
+confirmPassword.addEventListener("input",
+
+validateConfirmPassword);
+
+terms.addEventListener("change",validateTerms);
+
+
+registerForm.addEventListener("submit",
+
+function(e){
+
+e.preventDefault();
+
+const valid=
+
+validateName() &
+
+validateEmail() &
+
+validateMobile() &
+
+validateRole() &
+
+validatePassword() &
+
+validateConfirmPassword() &
+
+validateTerms();
+
+if(valid){
+
+Swal.fire({
+
+icon:"success",
+
+title:"Account Created!",
+
+html:`
+
+<h3 style="color:#58A6FF;">
+
+Welcome To Stackly
+
+</h3>
+
+<p>
+
+Your account has been created successfully.
+
+<br><br>
+
+Please login to continue.
+
+</p>
+
+`,
+
+background:"#111827",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8",
+
+confirmButtonText:"Go To Login"
+
+}).then(result=>{
+
+if(result.isConfirmed){
+
+window.location.href="login.html";
+
+}
+
+});
+
+registerForm.reset();
+
+strengthBar.style.width="0";
+
+document
+
+.querySelectorAll(".custom-input")
+
+.forEach(input=>{
+
+input.classList.remove("input-success");
+
+});
+
+}
+
+});
+
+
+AOS.init({
+
+duration:1000,
+
+once:true,
+
+offset:80,
+
+easing:"ease-in-out"
+
+});
+</script>
+
+</body>
+
+</html>

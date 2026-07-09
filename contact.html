@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="loader.css">
+<link rel="stylesheet" href="contact.css">
+
+
+    <title>Education</title>
+</head>
+<body>
+    <!--cursor !-->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+  
+<div id="preloader">
+    <div class="loader-bg"></div>
+
+    <span class="particle p1"></span>
+    <span class="particle p2"></span>
+    <span class="particle p3"></span>
+    <span class="particle p4"></span>
+    <span class="particle p5"></span>
+
+    <div class="loader-content">
+        <img
+            src="stacklylogoimg.png"
+            class="loader-logo"
+            alt="Stackly Logo">
+        <img
+            src="stacklyletter.png"
+            class="loader-text"
+            alt="Stackly">
+
+        <h4 class="loader-title">
+            Empowering Education Through Technology
+        </h4>
+        <p id="loading-message">
+
+            Preparing Your Learning Experience...
+
+        </p>
+        <div class="progress-box">
+
+            <div class="progress-fill"></div>
+
+        </div>
+
+        <h5 id="loading-percent">
+
+            0%
+
+        </h5>
+
+    </div>
+
+</div>
+<div id="website">
+
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+
+    <div class="container">
+        <button class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu">
+
+            <i class="ri-menu-3-line"></i>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse justify-content-center">
+
+           <ul class="navbar-nav align-items-center">
+
+         <li class="nav-item logo-item">
+
+                    <a href="index.html">
+
+                        <img src="orglogo.webp"
+                            class="logo"
+                            alt="Stackly">
+
+                    </a>
+
+    </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Service</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="d-none d-lg-block">
+
+            <a href="signup.html" class="signup-btn">
+
+                Sign up
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="offcanvas offcanvas-end custom-offcanvas"
+    tabindex="-1"
+    id="mobileMenu">
+
+    <div class="offcanvas-header">
+            <a href="index.html">
+        <img src="orglogo.webp"
+            class="mobile-logo"
+            alt="Stackly">
+            </a>
+
+        <button type="button"
+            class="btn-close btn-close-white shadow-none"
+            data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <ul class="navbar-nav text-center">
+
+            <li class="nav-item">
+
+                <a class="nav-link active" href="index.html">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="about.html">
+
+                    About us
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="service.html">
+
+                    Service
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="blog.html">
+
+                    Blog
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="contact.html">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="text-center mt-4">
+
+            <a href="signup.html" class="signup-btn mobile-btn">
+
+                Sign up
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<section class="contact-hero">
+
+    <div class="contact-overlay"></div>
+
+    <div class="container">
+
+        <div class="row align-items-center min-vh-100">
+
+
+            <div class="col-lg-7">
+
+                <div class="contact-content">
+
+                    <span
+                        class="contact-badge"
+                        data-aos="fade-up">
+
+                        <i class="ri-customer-service-2-fill"></i>
+
+                        Contact Stackly
+
+                    </span>
+
+                    <h1
+                        data-aos="fade-up"
+                        data-aos-delay="200">
+
+                        Let's Build
+
+                        <span>Your Future</span>
+
+                        Together
+
+                    </h1>
+
+                    <p
+                        data-aos="fade-up"
+                        data-aos-delay="400">
+
+                        Have questions about admissions,
+                        courses, certifications or career
+                        guidance?
+
+                        Our education experts are always
+                        ready to help you choose the right
+                        learning path.
+
+                    </p>
+
+                    <div
+                        class="contact-buttons"
+                        data-aos="fade-up"
+                        data-aos-delay="600">
+
+                        <a href="#contactForm"
+
+                            class="contact-btn-primary">
+
+                            <i class="ri-send-plane-fill"></i>
+
+                            Contact Now
+
+                        </a>
+
+                        <a href="service.html"
+
+                            class="contact-btn-secondary">
+
+                            <i class="ri-book-open-fill"></i>
+
+                            Explore Courses
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    
+
+            <div class="col-lg-5">
+
+                <div class="contact-right">
+
+              
+
+                    <div
+                        class="contact-glass-card"
+                        data-aos="fade-left"
+                        data-aos-delay="200">
+
+                        <div class="glass-icon">
+
+                            <i class="ri-phone-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+
+                                Call Support
+
+                            </span>
+
+                            <h5>
+
+                                24 / 7 Assistance
+
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+             
+
+                    <div
+                        class="contact-glass-card"
+                        data-aos="fade-left"
+                        data-aos-delay="350">
+
+                        <div class="glass-icon">
+
+                            <i class="ri-mail-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+
+                                Email Support
+
+                            </span>
+
+                            <h5>
+
+                                Quick Response
+
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+      
+
+                    <div
+                        class="contact-glass-card"
+                        data-aos="fade-left"
+                        data-aos-delay="500">
+
+                        <div class="glass-icon">
+
+                            <i class="ri-graduation-cap-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+
+                                Admissions
+
+                            </span>
+
+                            <h5>
+
+                                Expert Guidance
+
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+         
+
+                    <div
+                        class="contact-glass-card"
+                        data-aos="fade-left"
+                        data-aos-delay="650">
+
+                        <div class="glass-icon">
+
+                            <i class="ri-global-fill"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+
+                                Online Learning
+
+                            </span>
+
+                            <h5>
+
+                                Learn Anywhere
+
+                            </h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-stats">
+
+            <div class="contact-stat">
+
+                <h3>
+
+                    35K+
+
+                </h3>
+
+                <span>
+
+                    Students
+
+                </span>
+
+            </div>
+
+            <div class="contact-stat">
+
+                <h3>
+
+                    250+
+
+                </h3>
+
+                <span>
+
+                    Courses
+
+                </span>
+
+            </div>
+
+            <div class="contact-stat">
+
+                <h3>
+
+                    45+
+
+                </h3>
+
+                <span>
+
+                    Expert Mentors
+
+                </span>
+
+            </div>
+
+            <div class="contact-stat">
+
+                <h3>
+
+                    24/7
+
+                </h3>
+
+                <span>
+
+                    Support
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact-info-section">
+
+    <div class="container">
+
+
+        <div class="section-title text-center">
+
+            <span class="contact-small-title"
+                data-aos="fade-up">
+
+                <i class="ri-customer-service-2-fill"></i>
+
+                Get In Touch
+
+            </span>
+
+            <h2
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                We're Always Ready
+
+                <span>To Help You</span>
+
+            </h2>
+
+            <p
+                data-aos="fade-up"
+                data-aos-delay="400">
+
+                Whether you need admission guidance,
+                technical support or course information,
+                our team is always available.
+
+            </p>
+
+        </div>
+
+    
+
+        <div class="row g-4">
+
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="contact-info-card">
+
+                    <div class="contact-info-icon">
+
+                        <i class="ri-phone-fill"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Call Us
+
+                    </h4>
+
+                    <p>
+
+                        +91 98765 43210
+
+                    </p>
+
+                    <span>
+
+                        Monday - Saturday
+
+                        <br>
+
+                        9:00 AM - 6:00 PM
+
+                    </span>
+
+                    <a href="#"
+
+                        class="contactAction">
+
+                        Call Now
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+   
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="contact-info-card">
+
+                    <div class="contact-info-icon">
+
+                        <i class="ri-mail-fill"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Email Us
+
+                    </h4>
+
+                    <p>
+
+                        support@stackly.com
+
+                    </p>
+
+                    <span>
+
+                        Response within
+
+                        <br>
+
+                        24 Hours
+
+                    </span>
+
+                    <a href="#"
+
+                        class="contactAction">
+
+                        Send Email
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="contact-info-card">
+
+                    <div class="contact-info-icon">
+
+                        <i class="ri-map-pin-2-fill"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Visit Us
+
+                    </h4>
+
+                    <p>
+
+                        Chennai
+
+                    </p>
+
+                    <span>
+
+                        Tamil Nadu
+
+                        <br>
+
+                        India
+
+                    </span>
+
+                    <a href="#"
+
+                        class="contactAction">
+
+                        View Location
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="contact-info-card">
+
+                    <div class="contact-info-icon">
+
+                        <i class="ri-time-fill"></i>
+
+                    </div>
+
+                    <h4>
+
+                        Office Hours
+
+                    </h4>
+
+                    <p>
+
+                        Mon - Sat
+
+                    </p>
+
+                    <span>
+
+                        9:00 AM
+
+                        -
+
+                        6:00 PM
+
+                    </span>
+
+                    <a href="#"
+
+                        class="contactAction">
+
+                        Schedule Visit
+
+                        <i class="ri-arrow-right-line"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contact-bottom-strip">
+
+            <div>
+
+                <i class="ri-phone-fill"></i>
+
+                24/7 Support
+
+            </div>
+
+            <div>
+
+                <i class="ri-mail-send-fill"></i>
+
+                Quick Response
+
+            </div>
+
+            <div>
+
+                <i class="ri-graduation-cap-fill"></i>
+
+                Admission Guidance
+
+            </div>
+
+            <div>
+
+                <i class="ri-global-fill"></i>
+
+                Online Learning
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact-form-section" id="contactForm">
+
+    <div class="container">
+
+
+        <div class="section-title text-center">
+
+            <span class="contact-form-badge"
+                data-aos="fade-up">
+
+                <i class="ri-chat-1-fill"></i>
+
+                Send Us A Message
+
+            </span>
+
+            <h2
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                We'd Love To
+
+                <span>Hear From You</span>
+
+            </h2>
+
+            <p
+                data-aos="fade-up"
+                data-aos-delay="400">
+
+                Fill out the form below and our education experts
+                will contact you as soon as possible.
+
+            </p>
+
+        </div>
+
+        <div class="row g-5 align-items-start">
+
+         
+            <div class="col-lg-6">
+
+                <div class="contact-form-card">
+
+                    <form id="contactFormSubmit" novalidate>
+
+                  
+
+                        <div class="mb-4">
+
+                            <label>
+
+                                Full Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                class="form-control custom-input"
+                                placeholder="Enter your full name">
+
+                            <small class="error-text" id="nameError"></small>
+
+                        </div>
+
+
+                        <div class="mb-4">
+
+                            <label>
+
+                                Email Address
+
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-control custom-input"
+                                placeholder="Enter your email">
+
+                            <small class="error-text" id="emailError"></small>
+
+                        </div>
+
+                        <div class="mb-4">
+
+                            <label>
+
+                                Mobile Number
+
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="mobile"
+                                maxlength="10"
+                                class="form-control custom-input"
+                                placeholder="Enter your mobile number">
+
+                            <small class="error-text" id="mobileError"></small>
+
+                        </div>
+
+                   
+
+                        <div class="mb-4">
+
+                            <label>
+
+                                Select Course
+
+                            </label>
+
+                            <select
+                                id="course"
+                                class="form-select custom-input">
+
+                                <option value="">
+
+                                    Choose Course
+
+                                </option>
+
+                                <option>
+
+                                    Frontend Development
+
+                                </option>
+
+                                <option>
+
+                                    Java Full Stack
+
+                                </option>
+
+                                <option>
+
+                                    Python Full Stack
+
+                                </option>
+
+                                <option>
+
+                                    Artificial Intelligence
+
+                                </option>
+
+                                <option>
+
+                                    Data Science
+
+                                </option>
+
+                                <option>
+
+                                    Cloud Computing
+
+                                </option>
+
+                                <option>
+
+                                    Cyber Security
+
+                                </option>
+
+                                <option>
+
+                                    UI / UX Design
+
+                                </option>
+
+                                <option>
+
+                                    DevOps
+
+                                </option>
+
+                            </select>
+
+                            <small class="error-text" id="courseError"></small>
+
+                        </div>
+
+                 
+
+                        <div class="mb-4">
+
+                            <label>
+
+                                Your Message
+
+                            </label>
+
+                            <textarea
+                                id="message"
+                                rows="6"
+                                class="form-control custom-input"
+                                placeholder="Write your message here..."></textarea>
+
+                            <small class="error-text" id="messageError"></small>
+
+                        </div>
+
+                      
+
+                        <button
+                            type="submit"
+                            class="contact-submit-btn">
+
+                            <i class="ri-send-plane-fill"></i>
+
+                            Submit Enquiry
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+         
+            <div class="col-lg-6">
+
+                <div class="contact-map-card">
+
+                    
+
+                    <iframe
+
+                        src="https://www.google.com/maps?q=Chennai&output=embed"
+
+                        loading="lazy"
+
+                        allowfullscreen>
+
+                    </iframe>
+
+                    <div class="office-info">
+
+                        <div class="office-item">
+
+                            <i class="ri-map-pin-2-fill"></i>
+
+                            <div>
+
+                                <h5>
+
+                                    Office Address
+
+                                </h5>
+
+                                <p>
+
+                                    Chennai,
+                                    Tamil Nadu,
+                                    India
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="office-item">
+
+                            <i class="ri-phone-fill"></i>
+
+                            <div>
+
+                                <h5>
+
+                                    Phone
+
+                                </h5>
+
+                                <p>
+
+                                    +91 98765 43210
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="office-item">
+
+                            <i class="ri-mail-fill"></i>
+
+                            <div>
+
+                                <h5>
+
+                                    Email
+
+                                </h5>
+
+                                <p>
+
+                                    support@stackly.com
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="office-item">
+
+                            <i class="ri-time-fill"></i>
+
+                            <div>
+
+                                <h5>
+
+                                    Working Hours
+
+                                </h5>
+
+                                <p>
+
+                                    Monday - Saturday
+
+                                    <br>
+
+                                    9:00 AM - 6:00 PM
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer-section">
+
+    <div class="container">
+
+        <div class="footer-wrapper">
+
+            <div class="row gy-5">
+
+         
+
+                <div class="col-lg-4 col-md-6">
+
+                    <a href="#" id="footerLogo" class="footer-logo">
+
+                        <img src="orglogo.webp"
+                            alt="Stackly"
+                            class="img-fluid">
+
+                    </a>
+
+                    <p class="footer-description">
+
+                        Empowering students through modern education,
+                        expert mentors, industry-ready skills, and
+                        globally recognized certifications for a
+                        successful future.
+
+                    </p>
+
+                    <h5 class="footer-social-title">
+
+                        Follow Us
+
+                    </h5>
+
+                    <div class="footer-social">
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-facebook-fill"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-instagram-line"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-linkedin-fill"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-youtube-fill"></i>
+
+                        </a>
+
+                        <a href="#" class="social-link">
+
+                            <i class="ri-twitter-x-fill"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-6">
+
+                    <h4 class="footer-title">
+
+                        Quick Links
+
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+
+                            <a href="#">Home</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">About Us</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Services</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Testimonials</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Contact</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="footer-title">
+
+                        Learning Resources
+
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+
+                            <a href="#">Browse Courses</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Live Classes</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Career Programs</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Student Community</a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="#">Certificates</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <h4 class="footer-title">
+
+                        Contact Us
+
+                    </h4>
+
+                    <ul class="footer-contact">
+
+                        <li>
+
+                            <i class="ri-phone-fill"></i>
+
+                            <span>+91 98765 43210</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-mail-fill"></i>
+
+                            <span>support@stacklyeducation.com</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-map-pin-2-fill"></i>
+
+                            <span>Chennai, Tamil Nadu, India</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="ri-time-fill"></i>
+
+                            <span>Mon - Sat : 9 AM - 6 PM</span>
+
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                
+
+            </div>
+
+<hr class="footer-divider">
+
+<div class="footer-bottom">
+
+    <div class="footer-copyright">
+
+        <p>
+
+            &copy; 2026 <span>Stackly Education</span>.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+    <div class="footer-policy">
+
+        <a href="#" class="footer-policy-link">
+
+            Privacy Policy
+
+        </a>
+
+        <span>|</span>
+
+        <a href="#" class="footer-policy-link">
+
+            Terms & Conditions
+
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+
+<!--loader-->
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="loader.js"></script>
+<script src="cursor.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+
+     window.addEventListener("pageshow", function (event) {
+
+    if (event.persisted) {
+
+        window.location.reload();
+
+    }
+
+});
+AOS.init({
+
+    duration:1000,
+
+    easing:"ease-out-cubic",
+
+    once:true,
+
+    offset:80
+
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+    const navLinks = document.querySelectorAll(".navbar .nav-link");
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", function () {
+
+            navLinks.forEach(item => item.classList.remove("active"));
+
+            this.classList.add("active");
+
+        });
+
+    });
+
+});
+
+
+const mobileLinks = document.querySelectorAll(".offcanvas .nav-link");
+
+mobileLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        const menu = bootstrap.Offcanvas.getInstance(
+            document.getElementById("mobileMenu")
+        );
+
+        if(menu){
+            menu.hide();
+        }
+
+    });
+
+});
+
+
+
+window.addEventListener("scroll",()=>{
+
+    const navbar = document.querySelector(".custom-navbar");
+
+    if(window.scrollY > 20){
+
+        navbar.classList.add("navbar-scroll");
+
+    }else{
+
+        navbar.classList.remove("navbar-scroll");
+
+    }
+
+});
+
+
+const contactButtons=document.querySelectorAll(".contactAction");
+
+contactButtons.forEach(button=>{
+
+button.addEventListener("click",function(e){
+
+e.preventDefault();
+
+let title="";
+let message="";
+
+if(button.textContent.includes("Call")){
+
+title="Call Support";
+
+message="Our education counselors are available Monday to Saturday from 9:00 AM to 6:00 PM.";
+
+}
+
+else if(button.textContent.includes("Email")){
+
+title="Email Support";
+
+message="Send your course or admission enquiry and our team will respond within 24 hours.";
+
+}
+
+else if(button.textContent.includes("Location")){
+
+title="Visit Our Campus";
+
+message="Visit our Chennai office and meet our education experts for personalized guidance.";
+
+}
+
+else{
+
+title="Schedule Your Visit";
+
+message="Book an appointment with our admission team for one-to-one counselling.";
+
+}
+
+Swal.fire({
+
+icon:"info",
+
+title:title,
+
+html:`
+
+<h3 style="color:#58A6FF;">
+
+Stackly Education
+
+</h3>
+
+<p style="line-height:1.9;">
+
+${message}
+
+<br><br>
+
+<b>
+
+Thank you for choosing Stackly.
+
+</b>
+
+</p>
+
+`,
+
+background:"#111827",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8",
+
+confirmButtonText:"Continue"
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+window.location.href="error.html";
+
+}
+
+});
+
+});
+
+});
+
+const form=document.getElementById("contactFormSubmit");
+
+const fullName=document.getElementById("fullName");
+const email=document.getElementById("email");
+const mobile=document.getElementById("mobile");
+const course=document.getElementById("course");
+const message=document.getElementById("message");
+
+
+const nameError=document.getElementById("nameError");
+const emailError=document.getElementById("emailError");
+const mobileError=document.getElementById("mobileError");
+const courseError=document.getElementById("courseError");
+const messageError=document.getElementById("messageError");
+
+
+
+function showError(input,errorElement,message){
+
+input.classList.add("input-error");
+
+input.classList.remove("input-success");
+
+errorElement.innerHTML=message;
+
+}
+
+function showSuccess(input,errorElement){
+
+input.classList.remove("input-error");
+
+input.classList.add("input-success");
+
+errorElement.innerHTML="";
+
+}
+
+
+function validateName(){
+
+const value=fullName.value.trim();
+
+if(value===""){
+
+showError(fullName,nameError,"Full name is required.");
+
+return false;
+
+}
+
+if(value.length<3){
+
+showError(fullName,nameError,"Minimum 3 characters required.");
+
+return false;
+
+}
+
+if(!/^[A-Za-z ]+$/.test(value)){
+
+showError(fullName,nameError,"Only letters and spaces are allowed.");
+
+return false;
+
+}
+
+showSuccess(fullName,nameError);
+
+return true;
+
+}
+
+
+function validateEmail(){
+
+const pattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(email.value.trim()===""){
+
+showError(email,emailError,"Email address is required.");
+
+return false;
+
+}
+
+if(!pattern.test(email.value.trim())){
+
+showError(email,emailError,"Please enter a valid email address.");
+
+return false;
+
+}
+
+showSuccess(email,emailError);
+
+return true;
+
+}
+
+
+
+function validateMobile(){
+
+const pattern=/^[6-9]\d{9}$/;
+
+if(mobile.value.trim()===""){
+
+showError(mobile,mobileError,"Mobile number is required.");
+
+return false;
+
+}
+
+if(!pattern.test(mobile.value.trim())){
+
+showError(mobile,mobileError,"Enter a valid 10-digit mobile number.");
+
+return false;
+
+}
+
+showSuccess(mobile,mobileError);
+
+return true;
+
+}
+
+
+
+function validateCourse(){
+
+if(course.value===""){
+
+showError(course,courseError,"Please select a course.");
+
+return false;
+
+}
+
+showSuccess(course,courseError);
+
+return true;
+
+}
+
+
+function validateMessage(){
+
+const value=message.value.trim();
+
+if(value===""){
+
+showError(message,messageError,"Message is required.");
+
+return false;
+
+}
+
+if(value.length<20){
+
+showError(message,messageError,"Message must contain at least 20 characters.");
+
+return false;
+
+}
+
+showSuccess(message,messageError);
+
+return true;
+
+}
+
+
+fullName.addEventListener("input",validateName);
+
+email.addEventListener("input",validateEmail);
+
+mobile.addEventListener("input",validateMobile);
+
+course.addEventListener("change",validateCourse);
+
+message.addEventListener("input",validateMessage);
+
+
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const valid=
+
+validateName() &
+
+validateEmail() &
+
+validateMobile() &
+
+validateCourse() &
+
+validateMessage();
+
+if(valid){
+
+Swal.fire({
+
+icon:"success",
+
+title:"Enquiry Submitted!",
+
+html:`
+
+<h3 style="color:#58A6FF;">
+
+Thank You
+
+</h3>
+
+<p style="line-height:1.9;">
+
+Your enquiry has been submitted successfully.
+
+<br><br>
+
+Our education team will contact you shortly.
+
+</p>
+
+`,
+
+background:"#111827",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8",
+
+confirmButtonText:"Continue"
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+window.location.href="error.html";
+
+}
+
+});
+
+form.reset();
+
+document.querySelectorAll(".custom-input").forEach(input=>{
+
+input.classList.remove("input-success");
+
+});
+
+}
+
+});
+const footerLinks = document.querySelectorAll(
+".footer-links a,.footer-policy-link,.social-link,#footerLogo"
+);
+
+footerLinks.forEach(link=>{
+
+link.addEventListener("click",function(e){
+
+e.preventDefault();
+
+Swal.fire({
+
+icon:"info",
+
+title:"Stackly Education",
+
+text:"This feature is available in the premium version.",
+
+confirmButtonText:"Continue",
+
+confirmButtonColor:"#0A74D8",
+
+background:"#1b1b1b",
+
+color:"#fff",
+
+allowOutsideClick:false
+
+}).then((result)=>{
+
+if(result.isConfirmed){
+
+window.location.href="error.html";
+
+}
+
+});
+
+});
+
+});
+
+</script>
+
+</body>
+</html>

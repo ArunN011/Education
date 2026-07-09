@@ -1,0 +1,378 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow:hidden;
+    font-family:'Poppins',sans-serif;
+}
+
+#preloader{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+
+    height:100vh;
+
+    z-index:999999;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        -45deg,
+        #071326,
+        #0A1D40,
+        #103B84,
+        #071326
+    );
+
+    background-size:400% 400%;
+
+    animation:bgMove 10s ease infinite;
+
+}
+
+
+.loader-bg{
+
+    position:absolute;
+
+    width:150%;
+
+    height:150%;
+
+    background:
+    radial-gradient(circle,#3B82F620 1px,transparent 1px);
+
+    background-size:45px 45px;
+
+    animation:particles 25s linear infinite;
+
+    opacity:.4;
+
+}
+.loader-content{
+
+    position:relative;
+
+    z-index:10;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+.loader-logo{
+
+    width:120px;
+
+    animation:logoZoom 1.2s ease;
+
+    filter:drop-shadow(0 15px 35px rgba(59,130,246,.45));
+
+}
+
+
+.loader-text{
+
+    width:260px;
+
+    margin-top:18px;
+
+    animation:fadeUp 1.5s ease;
+
+}
+
+
+.loader-title{
+
+    margin-top:25px;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+
+#loading-message{
+
+    color:#d8e5ff;
+
+    margin-top:18px;
+
+    font-size:15px;
+
+    font-weight:400;
+
+}
+
+
+.progress-box{
+
+    margin-top:35px;
+
+    width:330px;
+
+    height:10px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:
+    inset 0 0 10px rgba(255,255,255,.08);
+
+}
+
+
+.progress-fill{
+
+    width:0%;
+
+    height:100%;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        90deg,
+        #2563EB,
+        #38BDF8,
+        #14B8A6
+    );
+
+    box-shadow:
+    0 0 15px #3B82F6,
+    0 0 30px #38BDF8;
+
+}
+
+
+#loading-percent{
+
+    margin-top:18px;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+
+.particle{
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#38BDF8;
+
+    opacity:.35;
+
+    animation:floatParticle 6s ease-in-out infinite;
+
+}
+
+.p1{
+
+    left:12%;
+    top:18%;
+
+}
+
+.p2{
+
+    right:15%;
+    top:22%;
+
+    animation-delay:1s;
+
+}
+
+.p3{
+
+    left:20%;
+    bottom:20%;
+
+    animation-delay:2s;
+
+}
+
+.p4{
+
+    right:18%;
+    bottom:25%;
+
+    animation-delay:3s;
+
+}
+
+.p5{
+
+    top:10%;
+
+    left:50%;
+
+    animation-delay:4s;
+
+}
+
+
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+
+@keyframes particles{
+
+0%{
+transform:translateY(0);
+}
+
+100%{
+transform:translateY(-120px);
+}
+
+}
+
+
+@keyframes logoZoom{
+
+0%{
+
+opacity:0;
+
+transform:scale(.5);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+@keyframes floatParticle{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-25px);
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.loader-logo{
+
+width:90px;
+
+}
+
+.loader-text{
+
+width:190px;
+
+}
+
+.progress-box{
+
+width:260px;
+
+}
+
+.loader-title{
+
+font-size:16px;
+
+}
+
+#loading-message{
+
+font-size:14px;
+
+}
+
+}

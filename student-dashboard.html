@@ -243,6 +243,11 @@ Logout
 
 </div>
 
+
+</header>
+
+
+
 <div class="search-box">
 
 <i class="ri-search-line"></i>
@@ -308,8 +313,6 @@ Student
 </div>
 
 </div>
-
-</header>
 
 <section class="dashboard-content">
 
@@ -1290,14 +1293,13 @@ studentRole.innerHTML="Student";
 }
 
 
-const navbar=document.querySelector(".left-navbar");
+const navbar=document.querySelector(".top-navbar");
 
 const dateBox=document.createElement("div");
 
 dateBox.className="live-date";
 
-navbar.appendChild(dateBox);
-
+navbar.insertAdjacentElement("afterend",dateBox);
 function updateDateTime(){
 
 const now=new Date();

@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | Stackly Education</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+   
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+          rel="stylesheet">
+
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+          rel="stylesheet">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet"
+          href="student-dashboard.css">
+
+</head>
+
+<body>
+
+
+
+<div class="sidebar-overlay"></div>
+
+<div class="dashboard-layout">
+
+
+<aside class="sidebar">
+
+<div class="sidebar-header">
+
+<a href="#">
+
+<img src="assets/images/logo.webp"
+     class="logo">
+
+
+</a>
+
+<button class="close-sidebar">
+
+<i class="ri-close-line"></i>
+
+</button>
+
+</div>
+
+
+<ul class="sidebar-menu">
+
+<li class="active">
+
+<a href="#">
+
+<i class="ri-home-5-line"></i>
+<span>Dashboard</span>
+
+
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-book-open-line"></i>
+
+
+<span>My Courses</span>
+
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-play-circle-line"></i>
+
+<span>Continue Learning</span>
+
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-file-list-3-line"></i>
+
+<span>Assignments</span>
+
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-award-line"></i>
+
+
+<span>Certificates</span>
+
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-line-chart-line"></i>
+
+
+<span>Progress</span>
+
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-message-3-line"></i>
+
+
+<span>Messages</span>
+
+
+<b class="menu-badge">3</b>
+
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-settings-3-line"></i>
+
+Settings
+
+</a>
+
+</li>
+
+</ul>
+
+
+<div class="upgrade-card">
+
+<i class="ri-vip-crown-2-fill"></i>
+
+<h5>
+
+Upgrade To Premium
+
+</h5>
+
+<p>
+
+Unlock premium courses and certificates.
+
+</p>
+
+<a href="error.html"
+class="upgrade-btn">
+
+Upgrade Now
+
+</a>
+
+</div>
+
+
+<div class="logout-box">
+
+<button id="logoutBtn">
+
+<i class="ri-logout-circle-r-line"></i>
+
+Logout
+
+</button>
+
+</div>
+
+</aside>
+
+
+<main class="main-content">
+
+
+<header class="top-navbar">
+
+<div class="left-navbar">
+
+    <div class="mobile-logo">
+<a href="student-dashboard.html">
+        <img src="orglogo.webp"
+             alt="Stackly Logo">
+</a>
+
+    </div>
+
+    <button class="menu-toggle">
+
+        <i class="ri-menu-3-line"></i>
+
+    </button>
+
+</div>
+
+<div class="search-box">
+
+<i class="ri-search-line"></i>
+
+<input
+
+type="text"
+
+placeholder="Search Courses...">
+
+</div>
+
+<div class="navbar-right">
+
+<button>
+
+<i class="ri-notification-3-line"></i>
+
+<span>
+
+5
+
+</span>
+
+</button>
+
+<button>
+
+<i class="ri-mail-line"></i>
+
+<span>
+
+2
+
+</span>
+
+</button>
+
+<div class="profile-box">
+
+<img
+
+src="student3.webp"
+
+class="profile-img">
+
+<div>
+
+<h6 id="studentName">
+
+Student
+
+</h6>
+
+<p id="studentRole">
+
+Student
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="dashboard-content">
+
+
+<div class="welcome-banner">
+
+<div>
+
+<h2>
+
+Welcome Back 
+
+</h2>
+
+<p>
+
+Continue your learning journey with Stackly.
+
+</p>
+
+<a href="#"
+
+class="continue-btn">
+
+Continue Learning
+
+</a>
+
+</div>
+
+<div>
+
+<img
+
+src="image12.webp"
+
+class="banner-image">
+
+</div>
+
+</div>
+
+
+<section class="dashboard-content">
+
+ 
+
+<div class="row g-4 mb-4">
+
+    <div class="col-xl-3 col-md-6">
+
+        <div class="stats-card">
+
+            <div class="stats-icon bg-primary">
+
+                <i class="ri-book-open-line"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    12
+
+                </h3>
+
+                <p>
+
+                    Active Courses
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-xl-3 col-md-6">
+
+        <div class="stats-card">
+
+            <div class="stats-icon bg-success">
+
+                <i class="ri-award-line"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    8
+
+                </h3>
+
+                <p>
+
+                    Certificates
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-xl-3 col-md-6">
+
+        <div class="stats-card">
+
+            <div class="stats-icon bg-warning">
+
+                <i class="ri-time-line"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    126h
+
+                </h3>
+
+                <p>
+
+                    Learning Hours
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-xl-3 col-md-6">
+
+        <div class="stats-card">
+
+            <div class="stats-icon bg-danger">
+
+                <i class="ri-line-chart-line"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+
+                    82%
+
+                </h3>
+
+                <p>
+
+                    Overall Progress
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="section-header">
+
+    <h3>
+
+        Continue Learning
+
+    </h3>
+
+    <a href="error.html">
+
+        View All
+
+    </a>
+
+</div>
+
+<div class="row g-4">
+
+
+
+    <div class="col-lg-4">
+
+        <div class="course-card">
+
+            <span class="course-badge">
+
+                Java
+
+            </span>
+
+            <h4>
+
+                Java Full Stack Development
+
+            </h4>
+
+            <p>
+
+                Instructor :
+
+                Stackly Team
+
+            </p>
+
+            <div class="progress">
+
+                <div
+                class="progress-bar"
+
+                style="width:78%">
+
+                </div>
+
+            </div>
+
+            <div class="course-footer">
+
+                <span>
+
+                    78% Completed
+
+                </span>
+
+                <a href="error.html">
+
+                    Resume
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+  
+
+    <div class="col-lg-4">
+
+        <div class="course-card">
+
+            <span class="course-badge">
+
+                AI
+
+            </span>
+
+            <h4>
+
+                Artificial Intelligence
+
+            </h4>
+
+            <p>
+
+                Instructor :
+
+                Stackly Team
+
+            </p>
+
+            <div class="progress">
+
+                <div
+                class="progress-bar"
+
+                style="width:42%">
+
+                </div>
+
+            </div>
+
+            <div class="course-footer">
+
+                <span>
+
+                    42% Completed
+
+                </span>
+
+                <a href="error.html">
+
+                    Continue
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+  
+
+    <div class="col-lg-4">
+
+        <div class="course-card">
+
+            <span class="course-badge">
+
+                UI / UX
+
+            </span>
+
+            <h4>
+
+                UI / UX Design Masterclass
+
+            </h4>
+
+            <p>
+
+                Instructor :
+
+                Stackly Team
+
+            </p>
+
+            <div class="progress">
+
+                <div
+                class="progress-bar"
+
+                style="width:91%">
+
+                </div>
+
+            </div>
+
+            <div class="course-footer">
+
+                <span>
+
+                    91% Completed
+
+                </span>
+
+                <a href="error.html">
+
+                    Resume
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="row mt-5">
+
+ 
+
+    <div class="col-lg-8">
+
+        <div class="section-header">
+
+            <h3>Recommended Courses</h3>
+
+            <a href="error.html">View All</a>
+
+        </div>
+
+        <div class="row g-4">
+
+          
+
+            <div class="col-md-6">
+
+                <div class="recommended-card">
+
+                    <img src="Ai.webp"
+                         class="img-fluid">
+
+                    <div class="recommended-body">
+
+                        <span class="recommended-tag">
+
+                            AI
+
+                        </span>
+
+                        <h5>
+
+                            Artificial Intelligence Masterclass
+
+                        </h5>
+
+                        <p>
+
+                            Learn AI from beginner to advanced.
+
+                        </p>
+
+                        <div class="course-rating">
+
+                            <i class="ri-star-fill"></i>
+
+                            4.9
+
+                            <span>
+
+                                (1,245 Students)
+
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span>
+
+                                12 Weeks
+
+                            </span>
+
+                            <a href="error.html">
+
+                                Enroll
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+      
+
+            <div class="col-md-6">
+
+                <div class="recommended-card">
+
+                    <img src="aws.webp"
+                         class="img-fluid">
+
+                    <div class="recommended-body">
+
+                        <span class="recommended-tag">
+
+                            Cloud
+
+                        </span>
+
+                        <h5>
+
+                            AWS Cloud Computing
+
+                        </h5>
+
+                        <p>
+
+                            Become an AWS Cloud Engineer.
+
+                        </p>
+
+                        <div class="course-rating">
+
+                            <i class="ri-star-fill"></i>
+
+                            4.8
+
+                            <span>
+
+                                (986 Students)
+
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span>
+
+                                10 Weeks
+
+                            </span>
+
+                            <a href="error.html">
+
+                                Enroll
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-lg-4">
+
+ 
+
+        <div class="upcoming-card">
+
+            <h4>
+
+                Upcoming Classes
+
+            </h4>
+
+            <ul>
+
+                <li>
+
+                    <strong>
+
+                        Java Live Session
+
+                    </strong>
+
+                    <span>
+
+                        Today • 7:00 PM
+
+                    </span>
+
+                </li>
+
+                <li>
+
+                    <strong>
+
+                        UI Workshop
+
+                    </strong>
+
+                    <span>
+
+                        Tomorrow • 5:30 PM
+
+                    </span>
+
+                </li>
+
+                <li>
+
+                    <strong>
+
+                        AI Bootcamp
+
+                    </strong>
+
+                    <span>
+
+                        Friday • 6:00 PM
+
+                    </span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    
+
+        <div class="achievement-card mt-4">
+
+            <h4>
+
+                Achievements
+
+            </h4>
+
+            <div class="achievement-item">
+
+                <i class="ri-award-fill"></i>
+
+                <div>
+
+                    <h6>
+
+                        Fast Learner
+
+                    </h6>
+
+                    <small>
+
+                        Completed 10 Courses
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="achievement-item">
+
+                <i class="ri-fire-fill"></i>
+
+                <div>
+
+                    <h6>
+
+                        25 Day Streak
+
+                    </h6>
+
+                    <small>
+
+                        Keep Learning
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="achievement-item">
+
+                <i class="ri-medal-fill"></i>
+
+                <div>
+
+                    <h6>
+
+                        Top Performer
+
+                    </h6>
+
+                    <small>
+
+                        Top 5%
+
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="chart-card mt-5">
+
+    <div class="section-header">
+
+        <h3>
+
+            Weekly Learning Activity
+
+        </h3>
+
+    </div>
+
+    <canvas id="learningChart"></canvas>
+
+</div>
+
+
+
+
+<div class="row mt-5 g-4">
+
+ 
+
+    <div class="col-lg-4">
+
+        <div class="student-profile-card">
+
+            <img
+            src="image6.webp"
+            class="student-profile-image">
+
+            <h3 id="profileName">
+
+                Student
+
+            </h3>
+
+            <p id="profileEmail">
+
+                student@stackly.com
+
+            </p>
+
+            <span id="profileRole"
+            class="role-badge">
+
+                Student
+
+            </span>
+
+            <div class="profile-stats">
+
+                <div>
+
+                    <h4>
+
+                        12
+
+                    </h4>
+
+                    <span>
+
+                        Courses
+
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        8
+
+                    </h4>
+
+                    <span>
+
+                        Certificates
+
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        82%
+
+                    </h4>
+
+                    <span>
+
+                        Progress
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-lg-8">
+
+        <div class="activity-card">
+
+            <div class="section-header">
+
+                <h3>
+
+                    Recent Activity
+
+                </h3>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <i class="ri-check-double-line"></i>
+
+                    <div>
+
+                        <h6>
+
+                            Completed Java Module 8
+
+                        </h6>
+
+                        <small>
+
+                            Today • 09:15 AM
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <i class="ri-award-line"></i>
+
+                    <div>
+
+                        <h6>
+
+                            Certificate Earned
+
+                        </h6>
+
+                        <small>
+
+                            Yesterday
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <i class="ri-play-circle-line"></i>
+
+                    <div>
+
+                        <h6>
+
+                            Continued AI Course
+
+                        </h6>
+
+                        <small>
+
+                            2 Days Ago
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <i class="ri-book-open-line"></i>
+
+                    <div>
+
+                        <h6>
+
+                            New Cloud Course Enrolled
+
+                        </h6>
+
+                        <small>
+
+                            Last Week
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+</section>
+
+</main>
+
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+   
+
+AOS.init({
+
+duration:1000,
+
+once:true,
+
+offset:80,
+
+easing:"ease-in-out"
+
+});
+
+
+const sidebar=document.querySelector(".sidebar");
+
+const overlay=document.querySelector(".sidebar-overlay");
+
+const menuBtn=document.querySelector(".menu-toggle");
+
+const closeBtn=document.querySelector(".close-sidebar");
+
+menuBtn.addEventListener("click",()=>{
+
+sidebar.classList.add("active");
+
+overlay.classList.add("active");
+
+});
+
+closeBtn.addEventListener("click",closeSidebar);
+
+overlay.addEventListener("click",closeSidebar);
+
+function closeSidebar(){
+
+sidebar.classList.remove("active");
+
+overlay.classList.remove("active");
+
+}
+
+
+
+const studentName=document.getElementById("studentName");
+
+const studentRole=document.getElementById("studentRole");
+
+const email=localStorage.getItem("userEmail");
+
+const role=localStorage.getItem("userRole");
+
+if(email){
+
+studentName.innerHTML=email.split("@")[0];
+
+}
+
+else{
+
+studentName.innerHTML="Student";
+
+}
+
+if(role){
+
+studentRole.innerHTML=
+
+role.charAt(0).toUpperCase()+
+
+role.slice(1);
+
+}
+
+else{
+
+studentRole.innerHTML="Student";
+
+}
+
+
+const navbar=document.querySelector(".left-navbar");
+
+const dateBox=document.createElement("div");
+
+dateBox.className="live-date";
+
+navbar.appendChild(dateBox);
+
+function updateDateTime(){
+
+const now=new Date();
+
+const options={
+
+weekday:"long",
+
+day:"numeric",
+
+month:"long",
+
+year:"numeric"
+
+};
+
+const time=now.toLocaleTimeString();
+
+const date=now.toLocaleDateString(
+
+"en-IN",
+
+options
+
+);
+
+dateBox.innerHTML=`
+
+<div>
+
+<i class="ri-calendar-line"></i>
+
+${date}
+
+</div>
+
+<div>
+
+<i class="ri-time-line"></i>
+
+${time}
+
+</div>
+
+`;
+
+}
+
+updateDateTime();
+
+setInterval(updateDateTime,1000);
+
+
+
+const searchInput=
+
+document.querySelector(".search-box input");
+
+searchInput.addEventListener("keyup",()=>{
+
+console.log(
+
+"Searching :",
+
+searchInput.value
+
+);
+
+});
+
+
+const notificationBtn=
+
+document.querySelectorAll(".navbar-right button")[0];
+
+notificationBtn.addEventListener("click",()=>{
+
+Swal.fire({
+
+title:"Notifications",
+
+html:`
+
+<ul style="text-align:left">
+
+<li>
+
+Java Live Class at 7 PM
+
+</li>
+
+<li>
+
+Assignment Due Tomorrow
+
+</li>
+
+<li>
+
+Certificate Available
+
+</li>
+
+</ul>
+
+`,
+
+background:"#171717",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8"
+
+});
+
+});
+
+
+const messageBtn=
+
+document.querySelectorAll(".navbar-right button")[1];
+
+messageBtn.addEventListener("click",()=>{
+
+Swal.fire({
+
+title:"Messages",
+
+text:"You have 2 unread messages.",
+
+background:"#171717",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8"
+
+});
+
+});
+
+
+document
+
+.querySelector(".continue-btn")
+
+.addEventListener("click",(e)=>{
+
+e.preventDefault();
+
+Swal.fire({
+
+title:"Continue Learning",
+
+text:"Redirecting to your current course...",
+
+icon:"success",
+
+background:"#171717",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8"
+
+}).then(()=>{
+
+window.location.href="error.html";
+
+});
+
+});
+
+
+
+document
+
+.querySelector(".upgrade-btn")
+
+.addEventListener("click",(e)=>{
+
+e.preventDefault();
+
+Swal.fire({
+
+title:"Premium Membership",
+
+text:"Premium plans will be available soon.",
+
+icon:"info",
+
+background:"#171717",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8"
+
+}).then(()=>{
+
+window.location.href="error.html";
+
+});
+
+});
+
+
+
+document
+
+.getElementById("logoutBtn")
+
+.addEventListener("click",()=>{
+
+Swal.fire({
+
+title:"Logout",
+
+text:"Are you sure you want to logout?",
+
+icon:"warning",
+
+showCancelButton:true,
+
+confirmButtonText:"Logout",
+
+cancelButtonText:"Cancel",
+
+background:"#171717",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8",
+
+cancelButtonColor:"#dc3545"
+
+}).then(result=>{
+
+if(result.isConfirmed){
+
+localStorage.removeItem("userEmail");
+
+localStorage.removeItem("userRole");
+
+window.location.href="login.html";
+
+}
+
+});
+
+});
+
+window.addEventListener("resize",()=>{
+
+if(window.innerWidth>992){
+
+sidebar.classList.remove("active");
+
+overlay.classList.remove("active");
+
+}
+
+});
+const ctx=document.getElementById("learningChart");
+
+if(ctx){
+
+new Chart(ctx,{
+
+type:"line",
+
+data:{
+
+labels:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
+
+datasets:[{
+
+label:"Learning Hours",
+
+data:[2,4,3,5,6,4,7],
+
+borderColor:"#0A74D8",
+
+backgroundColor:"rgba(10,116,216,.15)",
+
+fill:true,
+
+tension:.4
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+plugins:{
+
+legend:{
+
+labels:{
+
+color:"#fff"
+
+}
+
+}
+
+},
+
+scales:{
+
+x:{
+
+ticks:{
+
+color:"#fff"
+
+}
+
+},
+
+y:{
+
+ticks:{
+
+color:"#fff"
+
+}
+
+}
+
+}
+
+}
+
+});
+
+}
+const email1 = localStorage.getItem("userEmail");
+const role1 = localStorage.getItem("userRole");
+
+const displayName = email1
+    ? email1.split("@")[0]
+    : "Student";
+
+document.getElementById("studentName").innerHTML = displayName;
+document.getElementById("studentRole").innerHTML = role1 || "Student";
+
+document.getElementById("profileName").innerHTML = displayName;
+document.getElementById("profileEmail").innerHTML = email1 || "student@stackly.com";
+document.getElementById("profileRole").innerHTML = role1 || "Student";
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | Stackly</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="admin-dashboard.css">
+
+</head>
+
+<body>
+
+
+
+<div class="sidebar-overlay"></div>
+
+<div class="dashboard-layout">
+
+
+<aside class="sidebar">
+
+<div class="sidebar-header">
+
+<a href="admin-dashboard.html">
+
+<img src="orglogo.webp">
+
+
+</a>
+
+<button class="close-sidebar">
+
+<i class="ri-close-line"></i>
+
+</button>
+
+</div>
+
+<ul class="sidebar-menu">
+
+<li class="active">
+
+<a href="admin-dashboard.html">
+
+<i class="ri-home-5-line"></i>
+
+<span>Dashboard</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-graduation-cap-line"></i>
+
+<span>Students</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-book-open-line"></i>
+
+<span>Courses</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-user-star-line"></i>
+
+<span>Instructors</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-award-line"></i>
+
+<span>Certificates</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-money-rupee-circle-line"></i>
+
+<span>Revenue</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-line-chart-line"></i>
+
+<span>Analytics</span>
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="ri-settings-3-line"></i>
+
+<span>Settings</span>
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="admin-profile">
+
+<img src="image6.webp">
+
+<div>
+
+<h5 id="adminName">
+
+Admin
+
+</h5>
+
+<p id="adminEmail">
+
+admin@stackly.com
+
+</p>
+
+<small id="adminRole">
+
+Administrator
+
+</small>
+
+</div>
+
+</div>
+
+<div class="logout-box">
+
+<button id="logoutBtn">
+
+<i class="ri-logout-circle-r-line"></i>
+
+Logout
+
+</button>
+
+</div>
+
+</aside>
+
+
+
+<main class="main-content">
+
+
+<header class="top-navbar">
+
+<div class="left-navbar">
+
+<div class="mobile-logo">
+
+<img src="orglogo.webp">
+
+
+
+</div>
+
+<button class="menu-toggle">
+
+<i class="ri-menu-3-line"></i>
+
+</button>
+
+</div>
+
+<div class="search-box">
+
+<i class="ri-search-line"></i>
+
+<input
+type="text"
+placeholder="Search anything...">
+
+</div>
+
+<div class="navbar-right">
+
+<button>
+
+<i class="ri-notification-3-line"></i>
+
+<span>12</span>
+
+</button>
+
+<button>
+
+<i class="ri-moon-line"></i>
+
+</button>
+
+<div class="profile-box">
+
+<img src="image6.webp">
+
+<div>
+
+<h6>
+
+Admin
+
+</h6>
+
+<p>
+
+Administrator
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<section class="hero-section">
+
+<div>
+
+<h1>
+
+Welcome Back,
+
+<span id="heroAdminName">
+
+Admin
+
+</span>
+
+
+
+</h1>
+
+<p>
+
+Here's what's happening on your platform today.
+
+</p>
+
+</div>
+
+<div class="date-box">
+
+<i class="ri-calendar-line"></i>
+
+<span id="liveDate">
+
+Loading...
+
+</span>
+
+</div>
+
+</section>
+
+
+<section class="dashboard-content">
+    <div class="row g-4 mb-4">
+
+    <div class="col-xl-3 col-md-6">
+
+        <div class="dashboard-card blue-card">
+
+            <div class="card-top">
+
+                <div class="dashboard-icon">
+
+                    <i class="ri-group-line"></i>
+
+                </div>
+
+                <div class="mini-growth">
+
+                    <i class="ri-arrow-up-line"></i>
+
+                    12.5%
+
+                </div>
+
+            </div>
+
+            <h6>Total Students</h6>
+
+            <h2 id="studentCount">
+
+                12,548
+
+            </h2>
+
+            <small>
+
+                +256 New Students
+
+            </small>
+
+            <canvas id="studentChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <div class="col-xl-3 col-md-6">
+
+        <div class="dashboard-card purple-card">
+
+            <div class="card-top">
+
+                <div class="dashboard-icon">
+
+                    <i class="ri-book-open-line"></i>
+
+                </div>
+
+                <div class="mini-growth">
+
+                    <i class="ri-arrow-up-line"></i>
+
+                    8.2%
+
+                </div>
+
+            </div>
+
+            <h6>Total Courses</h6>
+
+            <h2 id="courseCount">
+
+                126
+
+            </h2>
+
+            <small>
+
+                14 New Courses
+
+            </small>
+
+            <canvas id="courseChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <div class="col-xl-3 col-md-6">
+
+        <div class="dashboard-card green-card">
+
+            <div class="card-top">
+
+                <div class="dashboard-icon">
+
+                    <i class="ri-money-rupee-circle-line"></i>
+
+                </div>
+
+                <div class="mini-growth">
+
+                    <i class="ri-arrow-up-line"></i>
+
+                    15.7%
+
+                </div>
+
+            </div>
+
+            <h6>Total Revenue</h6>
+
+            <h2>
+
+                ₹18.5L
+
+            </h2>
+
+            <small>
+
+                This Month
+
+            </small>
+
+            <canvas id="revenueChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <div class="col-xl-3 col-md-6">
+
+        <div class="dashboard-card orange-card">
+
+            <div class="card-top">
+
+                <div class="dashboard-icon">
+
+                    <i class="ri-award-line"></i>
+
+                </div>
+
+                <div class="mini-growth">
+
+                    <i class="ri-arrow-up-line"></i>
+
+                    10.3%
+
+                </div>
+
+            </div>
+
+            <h6>Certificates</h6>
+
+            <h2>
+
+                8,420
+
+            </h2>
+
+            <small>
+
+                Issued
+
+            </small>
+
+            <canvas id="certificateChart"></canvas>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+<div class="col-lg-8">
+
+<div class="table-card">
+
+<div class="card-header-custom">
+
+<h4>
+
+Recent Students
+
+</h4>
+
+<a href="error.html">
+
+View All
+
+</a>
+
+</div>
+
+<div class="table-responsive">
+
+<table class="table table-dark align-middle">
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Course</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Arun Kumar</td>
+
+<td>arun@gmail.com</td>
+
+<td>Java Full Stack</td>
+
+<td>
+
+<span class="status active">
+
+Active
+
+</span>
+
+</td>
+
+<td>
+
+<i class="ri-edit-box-line action-icon"></i>
+
+<i class="ri-delete-bin-line action-icon delete"></i>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Priya</td>
+
+<td>priya@gmail.com</td>
+
+<td>UI/UX</td>
+
+<td>
+
+<span class="status active">
+
+Active
+
+</span>
+
+</td>
+
+<td>
+
+<i class="ri-edit-box-line action-icon"></i>
+
+<i class="ri-delete-bin-line action-icon delete"></i>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Rahul</td>
+
+<td>rahul@gmail.com</td>
+
+<td>Python</td>
+
+<td>
+
+<span class="status inactive">
+
+Inactive
+
+</span>
+
+</td>
+
+<td>
+
+<i class="ri-edit-box-line action-icon"></i>
+
+<i class="ri-delete-bin-line action-icon delete"></i>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="activity-card">
+
+<div class="card-header-custom">
+
+<h4>
+
+Recent Activities
+
+</h4>
+
+</div>
+
+<div class="activity-item">
+
+<i class="ri-user-add-line"></i>
+
+<div>
+
+<h6>
+
+New Student Registered
+
+</h6>
+
+<small>
+
+10 Minutes Ago
+
+</small>
+
+</div>
+
+</div>
+
+<div class="activity-item">
+
+<i class="ri-book-open-line"></i>
+
+<div>
+
+<h6>
+
+New Course Added
+
+</h6>
+
+<small>
+
+1 Hour Ago
+
+</small>
+
+</div>
+
+</div>
+
+<div class="activity-item">
+
+<i class="ri-award-line"></i>
+
+<div>
+
+<h6>
+
+Certificate Generated
+
+</h6>
+
+<small>
+
+2 Hours Ago
+
+</small>
+
+</div>
+
+</div>
+
+<div class="activity-item">
+
+<i class="ri-money-rupee-circle-line"></i>
+
+<div>
+
+<h6>
+
+Payment Received
+
+</h6>
+
+<small>
+
+3 Hours Ago
+
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row mt-4">
+
+
+    <div class="col-lg-8">
+
+        <div class="chart-card">
+
+            <div class="card-header-custom">
+
+                <h4>
+
+                    Student Enrollment Analytics
+
+                </h4>
+
+                <select class="form-select chart-filter">
+
+                    <option>
+
+                        Last 7 Days
+
+                    </option>
+
+                    <option>
+
+                        Last Month
+
+                    </option>
+
+                    <option>
+
+                        Last Year
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <canvas id="enrollmentChart"></canvas>
+
+        </div>
+
+    </div>
+
+  
+
+    <div class="col-lg-4">
+
+        <div class="top-card">
+
+            <div class="card-header-custom">
+
+                <h4>
+
+                    Top Instructors
+
+                </h4>
+
+            </div>
+
+            <div class="teacher-item">
+
+                <img src="student3.webp">
+
+                <div>
+
+                    <h6>
+
+                        John Smith
+
+                    </h6>
+
+                    <small>
+
+                        Java Expert
+
+                    </small>
+
+                </div>
+
+               <span class="rating">
+
+                    <i class="ri-star-fill"></i>
+
+                    4.9
+
+                </span>
+
+            </div>
+
+            <div class="teacher-item">
+
+                <img src="trainer.webp">
+
+                <div>
+
+                    <h6>
+
+                        Priya
+
+                    </h6>
+
+                    <small>
+
+                        UI / UX
+
+                    </small>
+
+                </div>
+
+                <span class="rating">
+
+                    <i class="ri-star-fill"></i>
+
+                    4.9
+
+                </span>
+
+            </div>
+
+            <div class="teacher-item">
+
+                <img src="image10.webp">
+
+                <div>
+
+                    <h6>
+
+                       Sanjana
+
+                    </h6>
+
+                    <small>
+
+                        AI
+
+                    </small>
+
+                </div>
+
+                <span class="rating">
+
+                    <i class="ri-star-fill"></i>
+
+                    4.9
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="row mt-4">
+
+<div class="col-lg-8">
+
+<div class="course-management">
+
+<div class="card-header-custom">
+
+<h4>
+
+Course Management
+
+</h4>
+
+<a href="error.html">
+
+View All
+
+</a>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="course-box">
+
+<img src="image7.webp">
+
+<h5>
+
+Java Full Stack
+
+</h5>
+
+<p>
+
+1,250 Students
+
+</p>
+
+<div class="course-footer">
+
+<span>
+
+₹3,499
+
+</span>
+
+<div>
+
+<i class="ri-edit-box-line"></i>
+
+<i class="ri-delete-bin-line"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="course-box">
+
+<img src="aws.webp">
+
+<h5>
+
+AWS Cloud
+
+</h5>
+
+<p>
+
+890 Students
+
+</p>
+
+<div class="course-footer">
+
+<span>
+
+₹4,999
+
+</span>
+
+<div>
+
+<i class="ri-edit-box-line"></i>
+
+<i class="ri-delete-bin-line"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="col-lg-4">
+
+<div class="payment-card">
+
+<div class="card-header-custom">
+
+<h4>
+
+Recent Payments
+
+</h4>
+
+</div>
+
+<div class="payment-item">
+
+<div>
+
+<h6>
+
+Arun Kumar
+
+</h6>
+
+<small>
+
+Java Course
+
+</small>
+
+</div>
+
+<strong>
+
+₹3,499
+
+</strong>
+
+</div>
+
+<div class="payment-item">
+
+<div>
+
+<h6>
+
+Priya
+
+</h6>
+
+<small>
+
+AWS
+
+</small>
+
+</div>
+
+<strong>
+
+₹4,999
+
+</strong>
+
+</div>
+
+<div class="payment-item">
+
+<div>
+
+<h6>
+
+Rahul
+
+</h6>
+
+<small>
+
+UI / UX
+
+</small>
+
+</div>
+
+<strong>
+
+₹2,999
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</section>
+
+</main>
+
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script >
+    const enrollCtx=document.getElementById("enrollmentChart");
+
+if(enrollCtx){
+
+new Chart(enrollCtx,{
+
+type:"line",
+
+data:{
+
+labels:["Jan","Feb","Mar","Apr","May","Jun","Jul"],
+
+datasets:[{
+
+label:"Students",
+
+data:[120,220,340,420,560,690,820],
+
+borderColor:"#0A74D8",
+
+backgroundColor:"rgba(10,116,216,.15)",
+
+fill:true,
+
+tension:.4,
+
+pointRadius:5
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+plugins:{
+
+legend:{
+
+labels:{
+
+color:"#fff"
+
+}
+
+}
+
+},
+
+scales:{
+
+x:{
+
+ticks:{
+
+color:"#fff"
+
+}
+
+},
+
+y:{
+
+ticks:{
+
+color:"#fff"
+
+}
+
+}
+
+}
+
+}
+
+});
+
+}
+
+
+AOS.init({
+
+duration:1000,
+
+once:true
+
+});
+
+const sidebar=document.querySelector(".sidebar");
+
+const overlay=document.querySelector(".sidebar-overlay");
+
+const menu=document.querySelector(".menu-toggle");
+
+const close=document.querySelector(".close-sidebar");
+
+menu.addEventListener("click",()=>{
+
+sidebar.classList.add("active");
+
+overlay.classList.add("active");
+
+});
+
+close.addEventListener("click",closeSidebar);
+
+overlay.addEventListener("click",closeSidebar);
+
+function closeSidebar(){
+
+sidebar.classList.remove("active");
+
+overlay.classList.remove("active");
+
+}
+
+
+
+const email=localStorage.getItem("userEmail");
+
+const role=localStorage.getItem("userRole");
+
+const adminName=email ? email.split("@")[0] : "Admin";
+
+document.getElementById("adminName").innerHTML=adminName;
+
+document.getElementById("adminEmail").innerHTML=email || "admin@stackly.com";
+
+document.getElementById("adminRole").innerHTML=role || "Administrator";
+
+document.getElementById("heroAdminName").innerHTML=adminName;
+
+
+
+function updateDate(){
+
+const now=new Date();
+
+const options={
+
+weekday:"long",
+
+day:"numeric",
+
+month:"long",
+
+year:"numeric"
+
+};
+
+document.getElementById("liveDate").innerHTML=
+
+now.toLocaleDateString("en-IN",options);
+
+}
+
+updateDate();
+
+
+function counter(id,target){
+
+let count=0;
+
+const speed=target/100;
+
+const interval=setInterval(()=>{
+
+count+=speed;
+
+if(count>=target){
+
+count=target;
+
+clearInterval(interval);
+
+}
+
+document.getElementById(id).innerHTML=
+
+Math.floor(count).toLocaleString();
+
+},15);
+
+}
+
+counter("studentCount",12548);
+
+counter("courseCount",126);
+
+
+
+const darkBtn=document.querySelector(".ri-moon-line");
+
+darkBtn.parentElement.addEventListener("click",()=>{
+
+document.body.classList.toggle("light-mode");
+
+darkBtn.classList.toggle("ri-sun-line");
+
+});
+
+
+document
+
+.querySelector(".ri-notification-3-line")
+
+.parentElement
+
+.addEventListener("click",()=>{
+
+Swal.fire({
+
+title:"Notifications",
+
+html:`
+
+<ul style="text-align:left">
+
+<li>15 New Students Registered</li>
+
+<li>3 New Courses Added</li>
+
+<li>12 Certificates Generated</li>
+
+<li>Revenue Increased by 15%</li>
+
+</ul>
+
+`,
+
+background:"#171717",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8"
+
+});
+
+});
+
+
+document
+
+.querySelectorAll(".ri-edit-box-line")
+
+.forEach(btn=>{
+
+btn.onclick=()=>{
+
+Swal.fire({
+
+title:"Edit",
+
+text:"Edit feature coming soon.",
+
+icon:"info",
+
+background:"#171717",
+
+color:"#fff",
+
+confirmButtonColor:"#0A74D8"
+
+});
+
+};
+
+});
+
+document
+
+.querySelectorAll(".ri-delete-bin-line")
+
+.forEach(btn=>{
+
+btn.onclick=()=>{
+
+Swal.fire({
+
+title:"Delete",
+
+text:"Are you sure?",
+
+icon:"warning",
+
+showCancelButton:true,
+
+confirmButtonColor:"#0A74D8",
+
+cancelButtonColor:"#dc3545",
+
+background:"#171717",
+
+color:"#fff"
+
+});
+
+};
+
+});
+
+document
+
+.getElementById("logoutBtn")
+
+.onclick=()=>{
+
+Swal.fire({
+
+title:"Logout",
+
+text:"Do you really want to logout?",
+
+icon:"warning",
+
+showCancelButton:true,
+
+confirmButtonColor:"#0A74D8",
+
+cancelButtonColor:"#dc3545",
+
+background:"#171717",
+
+color:"#fff"
+
+}).then(result=>{
+
+if(result.isConfirmed){
+
+localStorage.clear();
+
+window.location.href="login.html";
+
+}
+
+});
+
+};
+
+window.addEventListener("resize",()=>{
+
+if(window.innerWidth>992){
+
+sidebar.classList.remove("active");
+
+overlay.classList.remove("active");
+
+}
+
+});
+</script>
+
+</body>
+
+</html>

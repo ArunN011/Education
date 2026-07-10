@@ -225,95 +225,88 @@ Logout
 
 <header class="top-navbar">
 
-<div class="left-navbar">
+   
 
-    <div class="mobile-logo">
-<a href="student-dashboard.html">
-        <img src="orglogo.webp"
-             alt="Stackly Logo">
-</a>
+    <div class="left-navbar">
+
+        <div class="mobile-logo">
+
+            <a href="student-dashboard.html">
+
+                <img src="orglogo.webp" alt="Stackly Logo">
+
+            </a>
+
+        </div>
+
+        <button class="menu-toggle">
+
+            <i class="ri-menu-3-line"></i>
+
+        </button>
 
     </div>
 
-    <button class="menu-toggle">
 
-        <i class="ri-menu-3-line"></i>
+    <div class="search-box">
 
-    </button>
+        <i class="ri-search-line"></i>
 
-</div>
+        <input
+        type="text"
+        placeholder="Search Courses...">
 
+    </div>
+
+
+   
+
+    <div class="navbar-right">
+
+        <button>
+
+            <i class="ri-notification-3-line"></i>
+
+            <span>5</span>
+
+        </button>
+
+        <button>
+
+            <i class="ri-mail-line"></i>
+
+            <span>2</span>
+
+        </button>
+
+        <div class="profile-box">
+
+            <img
+            src="student3.webp"
+            class="profile-img"
+            alt="Student">
+
+            <div>
+
+                <h6 id="studentName">
+
+                    Student
+
+                </h6>
+
+                <p id="studentRole">
+
+                    Student
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </header>
-
-
-
-<div class="search-box">
-
-<i class="ri-search-line"></i>
-
-<input
-
-type="text"
-
-placeholder="Search Courses...">
-
-</div>
-
-<div class="navbar-right">
-
-<button>
-
-<i class="ri-notification-3-line"></i>
-
-<span>
-
-5
-
-</span>
-
-</button>
-
-<button>
-
-<i class="ri-mail-line"></i>
-
-<span>
-
-2
-
-</span>
-
-</button>
-
-<div class="profile-box">
-
-<img
-
-src="student3.webp"
-
-class="profile-img">
-
-<div>
-
-<h6 id="studentName">
-
-Student
-
-</h6>
-
-<p id="studentRole">
-
-Student
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
 <section class="dashboard-content">
 
 
@@ -1292,14 +1285,13 @@ studentRole.innerHTML="Student";
 
 }
 
+const navbar = document.querySelector(".top-navbar");
 
-const navbar=document.querySelector(".top-navbar");
+const dateBox = document.createElement("div");
 
-const dateBox=document.createElement("div");
+dateBox.className = "live-date";
 
-dateBox.className="live-date";
-
-navbar.insertAdjacentElement("afterend",dateBox);
+navbar.insertBefore(dateBox, document.querySelector(".navbar-right"));
 function updateDateTime(){
 
 const now=new Date();
